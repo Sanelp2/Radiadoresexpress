@@ -1,0 +1,678 @@
+' ******************************************************************************
+' swxJRNL.swj - journal recorded on 12/12/25 by USER
+' *****************************************************************************
+Dim swApp As Object
+
+Dim Part As Object
+Dim boolstatus As Boolean
+Dim longstatus As Long, longwarnings As Long
+
+Sub main()
+
+Set swApp = Application.SldWorks
+
+swApp.ActivateDoc2 "Pieza1 - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Dim myModelView As Object
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Open
+Set Part = swApp.OpenDoc6("C:\Users\USER\Desktop\Proyectos en Solidwork\PiezaFurgonManuel\Pieza Furgón´doblada.pdf.SLDDRW", 3, 0, "", longstatus, longwarnings)
+Dim swDrawing As Object
+Set swDrawing = Part
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Pieza Furgón´doblada.pdf - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Pieza1 - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("D1@Croquis2@Pieza1.moPart_c", "DIMENSION", 0.06795192579507788877, 0.1130548621583321589, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.Extension.SelectByID2("Hoja1", "SHEET", 0.07435979322882041442, 0.1036895174474776748, 0, False, 0, Nothing, 0)
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Pieza Furgón´doblada.pdf - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+boolstatus = Part.ActivateView("Vista de dibujo2")
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo2", "DRAWINGVIEW", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vista de dibujo3")
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo3", "DRAWINGVIEW", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vista de dibujo5")
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo5", "DRAWINGVIEW", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+
+' Close Document
+Set swDrawing = Nothing
+Set Part = Nothing
+swApp.CloseDoc "Pieza Furgón´doblada.pdf - Hoja1"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Pieza1 - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+
+' Open
+Set Part = swApp.OpenDoc6("C:\Users\USER\Desktop\Proyectos en Solidwork\Cerradura\P2.SLDDRW", 3, 0, "", longstatus, longwarnings)
+Set swDrawing = Part
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "P2 - Hoja 2", False, longstatus
+Set Part = swApp.ActiveDoc
+
+' Close Document
+Set swDrawing = Nothing
+Set Part = Nothing
+swApp.CloseDoc "P2 - Hoja 2"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Pieza1 - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+
+' Open
+Set Part = swApp.OpenDoc6("C:\Users\USER\Desktop\Proyectos en Solidwork\Pieza ajuste bicicleta\Pieza2ChapaDespliegue.SLDDRW", 3, 0, "", longstatus, longwarnings)
+Set swDrawing = Part
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Pieza2ChapaDespliegue - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+' MSGBOX
+' ¿Guardar cambios en Pieza2ChapaDespliegue - Hoja1?
+
+
+' Close Document
+Set swDrawing = Nothing
+Set Part = Nothing
+swApp.CloseDoc "Pieza2ChapaDespliegue - Hoja1"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Pieza1 - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+
+' Open
+Set Part = swApp.OpenDoc6("C:\Users\USER\Desktop\Proyectos en Solidwork\Pieza ajuste bicicleta\Pieza2.SLDDRW", 3, 0, "", longstatus, longwarnings)
+Set swDrawing = Part
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Pieza2 - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+boolstatus = Part.Extension.SelectByID2("Formato de hoja1", "SHEET", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vista de dibujo2")
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo2", "DRAWINGVIEW", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vista de dibujo3")
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo3", "DRAWINGVIEW", 0, 0, 0, False, 0, Nothing, 0)
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Pieza1 - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Pieza2 - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+
+' Open
+Set Part = swApp.OpenDoc6("C:\Users\USER\Desktop\Proyectos en Solidwork\Pieza ajuste bicicleta\Pieza1.SLDDRW", 3, 0, "", longstatus, longwarnings)
+Set swDrawing = Part
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Pieza1 - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+
+' Open
+Set Part = swApp.OpenDoc6("C:\Users\USER\Desktop\Proyectos en Solidwork\Pieza ajuste bicicleta\Pieza1.SLDPRT", 1, 0, "", longstatus, longwarnings)
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Pieza1.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "P2.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+boolstatus = Part.Extension.SelectByID2("Chapa desplegada", "BODYFEATURE", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+longstatus = Part.SetBendState(2)
+boolstatus = Part.Extension.SelectByID2("Chapa desplegada", "BODYFEATURE", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+longstatus = Part.SetBendState(3)
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Pieza1-2.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+boolstatus = Part.Extension.SelectByRay(0.008237666348804850713, 0.01429703685334970942, 0.003256371729378315649, -0.4000360267793123259, -0.5150380749100240685, -0.7580942940502836125, 0.0001459800796918451994, 1, False, 0, 0)
+boolstatus = Part.Extension.SelectByRay(0.003048808998016738769, 0.004533928431953881955, 0.003174999999998817657, -0.4000360267793123259, -0.5150380749100240685, -0.7580942940502836125, 0.0001459800796918451994, 2, False, 0, 0)
+boolstatus = Part.Extension.SelectByRay(0.002272066568082209415, 0.00431611518951058315, 0.003174999999941974238, -0.4000360267793123259, -0.5150380749100240685, -0.7580942940502836125, 0.0001459800796918451994, 2, False, 0, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByRay(0.006892323436773040157, 0.00410241098700225848, 0.003174999999998817657, -0.4000360267793123259, -0.5150380749100240685, -0.7580942940502836125, 9.936370949320343614e-05, 2, False, 0, 0)
+boolstatus = Part.Extension.SelectByRay(0.006892323436773040157, 0.00410241098700225848, 0.003174999999998817657, -0.4000360267793123259, -0.5150380749100240685, -0.7580942940502836125, 9.936370949320343614e-05, 2, False, 0, 0)
+Part.FeatEdit
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Line3", "SKETCHSEGMENT", 0.01349041658631256607, 0.00889931204494382247, 0, False, 0, Nothing, 0)
+Dim myDisplayDim As Object
+Set myDisplayDim = Part.AddDimension2(0.01950982916649642712, 0.00939146527477017698, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Point5", "SKETCHPOINT", 0.00925255846979667132, 0.01353090378555386192, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line4", "SKETCHSEGMENT", 0.009477474866189987412, -0.0001108778549540334613, 0, True, 0, Nothing, 0)
+boolstatus = Part.DeSelectByID("Line4", "SKETCHSEGMENT", 0.009477474866189989147, 0, 0)
+boolstatus = Part.DeSelectByID("Point5", "SKETCHPOINT", 0.00925255846979667132, 0.01353090378555386192, 0)
+boolstatus = Part.Extension.SelectByID2("Point5", "SKETCHPOINT", 0.00925255846979667132, 0.01353090378555386192, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Point7", "SKETCHPOINT", 0.02134000000000000133, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.DeSelectByID("Point7", "SKETCHPOINT", 0.02134000000000000133, 0, 0)
+boolstatus = Part.DeSelectByID("Point5", "SKETCHPOINT", 0.00925255846979667132, 0.01353090378555386192, 0)
+boolstatus = Part.Extension.SelectByID2("Point5", "SKETCHPOINT", 0.00925255846979667132, 0.01353090378555386192, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Part.SketchManager.InsertSketch True
+Part.SetPickMode
+boolstatus = Part.Extension.SelectByRay(0.007963157235955052593, 0.005340665613891753052, 0.003174999999998817657, 0, 0, -1, 0.0001287169985699693534, 2, False, 0, 0)
+Part.FeatEdit
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Point5", "SKETCHPOINT", 0.00925255846979667132, 0.01353090378555386192, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line1", "SKETCHSEGMENT", 0.0002065719361013587663, 0.003702552111674389801, 0, True, 0, Nothing, 0)
+boolstatus = Part.DeSelectByID("Line1", "SKETCHSEGMENT", 0, 0.003702552111674389801, 0)
+boolstatus = Part.DeSelectByID("Point5", "SKETCHPOINT", 0.00925255846979667132, 0.01353090378555386192, 0)
+boolstatus = Part.Extension.SelectByID2("Point5", "SKETCHPOINT", 0.00925255846979667132, 0.01353090378555386192, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Arc1", "SKETCHSEGMENT", 0.001319776387019785946, 0.01342453764969528396, 0, True, 0, Nothing, 0)
+boolstatus = Part.DeSelectByID("Arc1", "SKETCHSEGMENT", 0.001282389701217878999, 0.01345670471506026089, 0)
+boolstatus = Part.DeSelectByID("Point5", "SKETCHPOINT", 0.00925255846979667132, 0.01353090378555386192, 0)
+boolstatus = Part.Extension.SelectByID2("Point5", "SKETCHPOINT", 0.00925255846979667132, 0.01353090378555386192, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Arc1", "SKETCHSEGMENT", 0.002766942173213736422, 0.01461195573067493488, 0, True, 0, Nothing, 0)
+boolstatus = Part.DeSelectByID("Arc1", "SKETCHSEGMENT", 0.00274855149857084315, 0.01464543975792980367, 0)
+boolstatus = Part.DeSelectByID("Point5", "SKETCHPOINT", 0.00925255846979667132, 0.01353090378555386192, 0)
+boolstatus = Part.Extension.SelectByID2("Point5", "SKETCHPOINT", 0.00925255846979667132, 0.01353090378555386192, 0, False, 0, Nothing, 0)
+boolstatus = Part.DeSelectByID("Point5", "SKETCHPOINT", 0.00925255846979667132, 0.01353090378555386192, 0)
+boolstatus = Part.Extension.SelectByID2("Arc1", "SKETCHSEGMENT", 0.001802164982417767125, 0.01409246032024633749, 0, False, 0, Nothing, 0)
+boolstatus = Part.DeSelectByID("Arc1", "SKETCHSEGMENT", 0.001856477591689884195, 0.01402891467066083413, 0)
+Part.SetPickMode
+Part.SketchManager.InsertSketch True
+
+' Named View
+Part.ShowNamedView2 "*Isométrica", 7
+Part.ViewZoomtofit2
+boolstatus = Part.Extension.SelectByRay(0.009953457894766870595, 0.006511173513786161493, 0.0031749999998282874, -0.5773815451999809722, -0.5772877120855484101, -0.5773815451999790849, 0.0001016384019948150179, 2, False, 0, 0)
+boolstatus = Part.Extension.SelectByRay(0.009953457894766870595, 0.006511173513786161493, 0.0031749999998282874, -0.5773815451999809722, -0.5772877120855484101, -0.5773815451999790849, 0.0001016384019948150179, 2, False, 0, 0)
+Part.FeatEdit
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Point5", "SKETCHPOINT", 0.00925255846979667132, 0.01353090378555386192, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line1", "SKETCHSEGMENT", 1.298967722165172978e-05, 0.009126459689479062345, 0, True, 0, Nothing, 0)
+boolstatus = Part.DeSelectByID("Line1", "SKETCHSEGMENT", 0, 0.009126459689479062345, 0)
+boolstatus = Part.DeSelectByID("Point5", "SKETCHPOINT", 0.00925255846979667132, 0.01353090378555386192, 0)
+boolstatus = Part.Extension.SelectByID2("Point5", "SKETCHPOINT", 0.00925255846979667132, 0.01353090378555386192, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Point5", "SKETCHPOINT", 0.00925255846979667132, 0.01353090378555386192, 0, True, 0, Nothing, 0)
+boolstatus = Part.DeSelectByID("Point5", "SKETCHPOINT", 0.00925255846979667132, 0.01353090378555386192, 0)
+boolstatus = Part.DeSelectByID("Point5", "SKETCHPOINT", 0.00925255846979667132, 0.01353090378555386192, 0)
+boolstatus = Part.Extension.SelectByID2("Point5", "SKETCHPOINT", 0.00925255846979667132, 0.01353090378555386192, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Point2", "SKETCHPOINT", 0, 0.01000000000000000021, 0, True, 0, Nothing, 0)
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Pieza1.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Pieza1-2.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+boolstatus = Part.DeSelectByID("Point2", "SKETCHPOINT", 0, 0.01000000000000000021, 0)
+boolstatus = Part.DeSelectByID("Point5", "SKETCHPOINT", 0.00925255846979667132, 0.01353090378555386192, 0)
+boolstatus = Part.Extension.SelectByID2("Point5", "SKETCHPOINT", 0.00925255846979667132, 0.01353090378555386192, 0, False, 0, Nothing, 0)
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Pieza2 - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "P2.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+
+' Open
+Set Part = swApp.OpenDoc6("C:\Users\USER\Desktop\Proyectos en Solidwork\Pieza ajuste bicicleta\Pieza2.SLDDRW", 3, 0, "", longstatus, longwarnings)
+Set swDrawing = Part
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Pieza2 - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+
+' Open
+Set Part = swApp.OpenDoc6("C:\Users\USER\Desktop\Proyectos en Solidwork\Pieza ajuste bicicleta\Pieza2.SLDDRW", 3, 0, "", longstatus, longwarnings)
+Set swDrawing = Part
+
+' Open
+Set Part = swApp.OpenDoc6("C:\Users\USER\Desktop\Proyectos en Solidwork\Pieza ajuste bicicleta\Pieza2ChapaDespliegue.SLDDRW", 3, 0, "", longstatus, longwarnings)
+Set swDrawing = Part
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Pieza2ChapaDespliegue - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+' MSGBOX
+' ¿Guardar cambios en Pieza2ChapaDespliegue - Hoja1?
+
+
+' Close Document
+Set swDrawing = Nothing
+Set Part = Nothing
+swApp.CloseDoc "Pieza2ChapaDespliegue - Hoja1"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Pieza2 - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "P2.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+boolstatus = Part.Extension.SelectByID2("Chapa desplegada", "BODYFEATURE", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+longstatus = Part.SetBendState(2)
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Pieza2 - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.Extension.SelectByID2("Hoja1", "SHEET", 0.09149167395261631475, 0.1315999473038118595, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+' MSGBOX
+' ¿Guardar cambios en Pieza2 - Hoja1?
+
+
+' Close Document
+Set swDrawing = Nothing
+Set Part = Nothing
+swApp.CloseDoc "Pieza2 - Hoja1"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "P2.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+' MSGBOX
+' Hay un archivo de dibujo con el mismo nombre que el modelo. ¿Desea abrir este archivo?
+
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Plantillaparadiseños - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+
+' New Document
+Dim swSheetWidth As Double
+swSheetWidth = 0.4317999999999999616
+Dim swSheetHeight As Double
+swSheetHeight = 0.2793999999999999817
+Set Part = swApp.NewDocument("C:\ProgramData\SolidWorks\SOLIDWORKS 2023\templates\Dibujo.drwdot", 12, swSheetWidth, swSheetHeight)
+Set swDrawing = Part
+Set swDrawing = Part
+Dim swSheet As sheet
+Set swSheet = swDrawing.GetCurrentSheet()
+swSheet.SetProperties2 12, 13, 1, 1, False, swSheetWidth, swSheetHeight, True
+swSheet.SetTemplateName "C:\ProgramData\SolidWorks\SOLIDWORKS 2023\templates\Dibujo.drwdot"
+swSheet.ReloadTemplate True
+boolstatus = Part.GenerateViewPaletteViews("C:\Users\USER\Desktop\Proyectos en Solidwork\Cerradura\P2.SLDPRT")
+Dim myView As Object
+Set myView = Part.DropDrawingViewFromPalette2("Vista de dibujo1", 0.1297863595145883897, 0.1674429681707130801, 0)
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByRay(0.1073704229183945896, 0.1778918962633338208, -499.9984124999999722, 0, 0, -1, 0.0002711837740937920321, 1, False, 0, 0)
+boolstatus = Part.Extension.SelectByRay(0.1135606659128747808, 0.1662982605753059451, -499.9984124999999722, 0, 0, -1, 0.0004482833816652479126, 1, False, 0, 0)
+boolstatus = Part.Extension.SelectByRay(0.1089459840427913495, 0.1674848930561845528, -499.9984125000000859, 0, 0, -1, 0.0004482833816652479126, 1, False, 0, 0)
+boolstatus = Part.Extension.SelectByRay(0.126349927095677439, 0.1682759813767702728, -499.9984124999999722, 0, 0, -1, 0.0004482833816652479126, 1, False, 0, 0)
+boolstatus = Part.Extension.SelectByRay(0.1075140885861311235, 0.1752970890546942939, -499.9984124999999722, 0, 0, -1, 0.0002543680297292123522, 1, False, 0, 0)
+boolstatus = Part.Extension.SelectByRay(0.1087859287347771875, 0.1833022005785253927, -499.9984124999999722, 0, 0, -1, 0.0002543680297292123522, 1, False, 0, 0)
+Dim vAnnotations As Variant
+vAnnotations = Part.InsertModelAnnotations3(1, 557064, True, True, False, True)
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("D3@Croquis7@P2-4@Vista de dibujo1", "DIMENSION", 0.1084866722292134045, 0.15906242363135073, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("D4@Croquis7@P2-4@Vista de dibujo1", "DIMENSION", 0.1081874157236496214, 0.1408077767919601875, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0.1047459659096661722, 0.1467180927768448329, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("D2@Brida base1@P2-4@Vista de dibujo1", "DIMENSION", 0.111479237284851207, 0.142827758204515709, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("D1@Croquis7@P2-4@Vista de dibujo1", "DIMENSION", 0.1489611146067145453, 0.1440247842267708134, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.Extension.SelectByID2("Hoja1", "SHEET", 0.1300848744935086954, 0.1266271788003634768, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("D3@Croquis7-1@P2-4@Vista de dibujo1", "DIMENSION", 0.1060819873527910628, 0.1776314944454946976, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("D4@Croquis7-1@P2-4@Vista de dibujo1", "DIMENSION", 0.1088284460603445025, 0.1915750540376890132, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0.1222438405164708586, 0.1917863200921162137, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("D1@Croquis7-1@P2-4@Vista de dibujo1", "DIMENSION", 0.1484408312654420248, 0.1868215678130773216, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.Extension.SelectByID2("Hoja1", "SHEET", 0.1623843908576363682, 0.1705540816221839395, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("D2@Croquis7-1@P2-4@Vista de dibujo1", "DIMENSION", 0.1417859505509856399, 0.1687583201595528326, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("D2@Croquis7@P2-4@Vista de dibujo1", "DIMENSION", 0.1379831615712962811, 0.1645329990710091006, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("D1@Croquis1@P2-4@Vista de dibujo1", "DIMENSION", 0.1422084826598400131, 0.1549203935945721033, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.Extension.SelectByID2("Hoja1", "SHEET", 0.1775955467763938034, 0.1334768890702126287, 0, False, 0, Nothing, 0)
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Hoja1", "SHEET", 0.1654477486468305669, 0.1757300999556500043, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Hoja1", "SHEET", 0.08432158374679081525, 0.1711878797854654854, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Hoja1", "SHEET", 0.1143213634754513541, 0.1972792375072230653, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("D4@Croquis7-1@P2-4@Vista de dibujo1", "DIMENSION", 0.1092509781691988757, 0.195377843017378372, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.Extension.SelectByID2("Hoja1", "SHEET", 0.1080890148698493425, 0.1999200631875628908, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("D2@Croquis7-1@P2-4@Vista de dibujo1", "DIMENSION", 0.1454831065034614124, 0.1745681366563004711, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.Extension.SelectByID2("Hoja1", "SHEET", 0.1787575100757433366, 0.175201934819582017, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Hoja1", "SHEET", 0.1918560054502289336, 0.1655893293431450197, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0.1483351982382284384, 0.1727723751936693919, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("D2@Croquis7-1@P2-4@Vista de dibujo1", "DIMENSION", 0.1460112716395293719, 0.1713991458398926859, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.Extension.SelectByID2("Hoja1", "SHEET", 0.1632294550753451146, 0.1749906687651548443, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("D5@Croquis7@P2-4@Vista de dibujo1", "DIMENSION", 0.121715675380402899, 0.1530189991047274101, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0.1448493083401798665, 0.1568217880844167689, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByRay(0.1089361682927626196, 0.1458551777099366953, -499.9984124999999722, 0, 0, -1, 0.0002037926560722781862, 1, False, 0, 0)
+Set myDisplayDim = Part.AddDimension2(0.08490062267953217556, 0.1379432275365044258, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByRay(0.1082125671900415892, 0.1544991054428700439, -499.9984124999999722, 0, 0, -1, 0.0001422289770156767437, 1, False, 0, 0)
+boolstatus = Part.Extension.SelectByRay(0.1142363826871761329, 0.145588878353358514, -499.9984124999999722, 0, 0, -1, 0.0001422289770156767437, 1, True, 0, 0)
+Set myDisplayDim = Part.AddDimension2(0.08490062267953217556, 0.1510688771771598882, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByRay(0.10816437504267018, 0.1804221076609511254, -499.9984124999999722, 0, 0, -1, 0.0001558725779019601873, 1, False, 0, 0)
+boolstatus = Part.Extension.SelectByRay(0.1110067573455882778, 0.1893160135765335761, -499.9984124999999722, 0, 0, -1, 0.0001558725779019601873, 1, True, 0, 0)
+Set myDisplayDim = Part.AddDimension2(0.08785509503956183408, 0.185510888884183045, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.Extension.SelectByRay(0.107403965554950423, 0.1668413152573448022, -499.9984124999999722, 0, 0, -1, 0.0003961487957393901001, 1, False, 0, 0)
+Set myDisplayDim = Part.AddDimension2(0.07699371976436783505, 0.1691716022945973785, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.Extension.SelectByID2("D3@Croquis7-1@P2-4@Vista de dibujo1", "DIMENSION", 0.09645161649627316536, 0.1737156620104315652, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateSheet("Hoja1")
+Part.EditDelete
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.Extension.SelectByID2("D3@Croquis7@P2-4@Vista de dibujo1", "DIMENSION", 0.09598555908952094429, 0.156704566663975392, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateSheet("Hoja1")
+Part.EditDelete
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.Extension.SelectByRay(0.1290022119262510536, 0.1893962262798263019, -499.9984124999999722, 0, 0, -1, 0.0003236910704108807678, 1, False, 0, 0)
+Set myDisplayDim = Part.AddDimension2(0.1297863595145883064, 0.200801576352501121, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByRay(0.1521019491498435683, 0.1861600772017655003, -499.9984124999999722, 0, 0, -1, 0.0005593381696700019425, 1, False, 0, 0)
+Set myDisplayDim = Part.AddDimension2(0.1623016451850024244, 0.1983339079568981755, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("D1@Croquis7@P2-4@Vista de dibujo1", "DIMENSION", 0.1679974499720403303, 0.1572376630527735353, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("D1@Croquis1@P2-4@Vista de dibujo1", "DIMENSION", 0.1668683115006623086, 0.1533663311509060323, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByRay(0.1262193265310535273, 0.1609476894552384352, -499.9984124999999722, 0, 0, -1, 0.0005484386860978961034, 1, False, 0, 0)
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByRay(0.1257354100433200894, 0.1601411619756827054, -499.9984124999999722, 0, 0, -1, 0.0005484386860978961034, 1, False, 0, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByRay(0.1260580210351423813, 0.1609476894552384352, -499.9984124999999722, 0, 0, -1, 0.0005484386860978961034, 1, False, 0, 0)
+Set myDisplayDim = Part.AddDimension2(0.1860738595145884078, 0.1674109594911317167, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("D2@Croquis7@P2-4@Vista de dibujo1", "DIMENSION", 0.1415433486426123932, 0.165948159831975417, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("D2@Croquis7-1@P2-4@Vista de dibujo1", "DIMENSION", 0.1413820431467012473, 0.173368212643888131, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByRay(0.1404142101712343715, 0.1819174039236874096, -499.9984124999999722, 0, 0, -1, 0.0005484386860978961034, 1, False, 0, 0)
+Set myDisplayDim = Part.AddDimension2(0.138801155212122912, 0.1706260192133986497, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Hoja1", "SHEET", 0.1992817602552138245, 0.1713455779904321796, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("RD8@Vista de dibujo1", "DIMENSION", 0.1384860693932137288, 0.1715231942611628035, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("D5@Croquis7-1@P2-4@Vista de dibujo1", "DIMENSION", 0.1249165499610459112, 0.1835849893119786413, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("D4@Croquis7-1@P2-4@Vista de dibujo1", "DIMENSION", 0.1056662601098063703, 0.1946181812848499226, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("RD6@Vista de dibujo1", "DIMENSION", 0.1603061916900020978, 0.1977542479980620438, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("D1@Croquis7-1@P2-4@Vista de dibujo1", "DIMENSION", 0.1679051225720160911, 0.1846068913926727784, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("RD7@Vista de dibujo1", "DIMENSION", 0.1835854561380766692, 0.1657904911134000514, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("D4@Croquis7@P2-4@Vista de dibujo1", "DIMENSION", 0.1045806985552329427, 0.1370834188924583696, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.Extension.SelectByID2("Hoja1", "SHEET", 0.1294279963599135608, 0.1324999367731483635, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("D2@Brida base1@P2-4@Vista de dibujo1", "DIMENSION", 0.12882490660737278, 0.1367215650409339123, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.Extension.SelectByID2("Hoja1", "SHEET", 0.1732477458969964024, 0.1367025955158986117, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Hoja1", "SHEET", 0.1120025288233066352, 0.1209893339884615393, 0, False, 0, Nothing, 0)
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0.1325031189145202126, 0.1778318792413719485, 0, False, 0, Nothing, 0)
+boolstatus = Part.DrawingViewRotate(1.570796326794900111)
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0.1325031189145202126, 0.1778318792413719485, 0, False, 0, Nothing, 0)
+boolstatus = Part.DrawingViewRotate(4.712388980384700332)
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0.1325031189145202126, 0.1778318792413719485, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0.1063981467269423803, 0.1642801904667904878, 0, False, 0, Nothing, 0)
+boolstatus = Part.DrawingViewRotate(-3.141592653589800221)
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0.1063981467269423803, 0.1642801904667904878, 0, False, 0, Nothing, 0)
+boolstatus = Part.DrawingViewRotate(-4.712388980384700332)
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0.1063981467269423803, 0.1642801904667904878, 0, False, 0, Nothing, 0)
+boolstatus = Part.DrawingViewRotate(4.712388980384700332)
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("D2@Brida base1@P2-4@Vista de dibujo1", "DIMENSION", 0.1029926866431975785, 0.1631979758154869231, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.Extension.SelectByID2("Hoja1", "SHEET", 0.1758091395275939162, 0.103544184114542942, 0, False, 0, Nothing, 0)
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Pieza1-2.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+' MSGBOX
+' ¿Desea guardar cambios en Pieza1 - Hoja1?
+
+Part.ClearSelection2 True
+
+' Close Document
+Set swDrawing = Nothing
+Set Part = Nothing
+swApp.CloseDoc "Pieza1 - Hoja1"
+
+' Close Document
+swPart = Nothing
+Set Part = Nothing
+swApp.CloseDoc "Pieza1.SLDPRT"
+
+' Close Document
+swPart = Nothing
+Set Part = Nothing
+swApp.CloseDoc "P2.SLDPRT"
+Part.ClearSelection2 True
+
+' Close Document
+swPart = Nothing
+Set Part = Nothing
+swApp.CloseDoc "Pieza1-2.SLDPRT"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "P2 - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+
+' Close Document
+Set swDrawing = Nothing
+Set Part = Nothing
+swApp.CloseDoc "Plantillaparadiseños - Hoja2"
+Part.ClearSelection2 True
+
+' Close Document
+Set swDrawing = Nothing
+Set Part = Nothing
+swApp.CloseDoc "P2 - Hoja1"
+swApp.ExitApp
+End Sub

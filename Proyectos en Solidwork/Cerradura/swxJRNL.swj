@@ -1,0 +1,380 @@
+' ******************************************************************************
+' swxJRNL.swj - journal recorded on 12/11/25 by USER
+' *****************************************************************************
+Dim swApp As Object
+
+Dim Part As Object
+Dim boolstatus As Boolean
+Dim longstatus As Long, longwarnings As Long
+
+Sub main()
+
+Set swApp = Application.SldWorks
+
+swApp.ActivateDoc2 "P2 - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Dim myModelView As Object
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+boolstatus = Part.Extension.SelectByID2("Hoja1", "SHEET", 0.09221477140112580018, 0.01737219046304164238, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Hoja1", "SHEET", 0.0929953005805471411, 0.01867307242874388651, 0, False, 0, Nothing, 0)
+Dim mySheet As Object
+Set mySheet = Part.Sheet("Hoja1")
+mySheet.FocusLocked = TRUE
+boolstatus = Part.Extension.SelectByID2("Hoja1", "SHEET", 0.0929953005805471411, 0.01867307242874388651, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Hoja1", "SHEET", 0.09507671172567075391, 0.01841289603560342103, 0, False, 0, Nothing, 0)
+Part.EditTemplate
+boolstatus = Part.Extension.SelectByID2("DetailItem170@Formato de hoja1", "NOTE", 0.0992936122500580054, 0.01985618401787450638, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("DetailItem170@Formato de hoja1", "NOTE", 0.1059782828590360992, 0.01798447624736063122, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("DetailItem185@Formato de hoja1", "NOTE", 0.1530383639462419842, 0.02172789178838838153, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Elemento de detalle6@Formato de hoja1", "NOTE", 0.1926116139513924241, 0.02440176003197960797, 0, False, 0, Nothing, 0)
+Part.EditCopy
+boolstatus = Part.Extension.SelectByID2("Formato de hoja1", "SHEET", 0.1928790007757515412, 0.01638015530120587315, 0, False, 0, Nothing, 0)
+Part.Paste
+boolstatus = Part.Extension.SelectByID2("Elemento de detalle6@Formato de hoja1", "NOTE", 0.1927950854871249842, 0.02194927605554826411, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line409", "SKETCHSEGMENT", 0.1906884318270303247, 0.01834578953170214882, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Elemento de detalle6@Formato de hoja1", "NOTE", 0.193044557631083552, 0.0245271548764535649, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Elemento de detalle7@Formato de hoja1", "NOTE", 0.1944305139864089815, 0.01446511173679094348, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Formato de hoja1", "SHEET", 0.1962876955025450454, 0.02208787169108080567, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Elemento de detalle7@Formato de hoja1", "NOTE", 0.1947077052574740785, 0.01751421571850688905, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Elemento de detalle7@Formato de hoja1", "NOTE", 0.1948185817659001118, 0.01798544087931753382, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Formato de hoja1", "SHEET", 0.2003901263143083311, 0.01535212380419921988, 0, False, 0, Nothing, 0)
+Part.SetPickMode
+Part.ClearSelection2 True
+Part.EditSheet
+Part.EditSketch
+Part.PrintDirect
+Part.PrintPreview
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Part.PrintDirect
+Part.PrintPreview
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+boolstatus = Part.Extension.SelectByID2("Hoja1", "SHEET", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Hoja1", "SHEET", 0, 0, 0, False, 0, Nothing, 0)
+Part.EditCopy
+Part.Paste
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Hoja1(2)", "SHEET", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Hoja1(2)", "SHEET", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.SelectedFeatureProperties(0, 0, 0, 0, 0, 0, 0, 1, 0, "Hoja 2")
+boolstatus = Part.Extension.SelectByID2("Hoja 2", "SHEET", 0.1769168288806267086, 0.08478080599913212501, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("RD15@Vista de dibujo2", "DIMENSION", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("RD14@Vista de dibujo2", "DIMENSION", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("RD13@Vista de dibujo2", "DIMENSION", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("RD12@Vista de dibujo2", "DIMENSION", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("RD11@Vista de dibujo2", "DIMENSION", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("RD10@Vista de dibujo2", "DIMENSION", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("RD9@Vista de dibujo2", "DIMENSION", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("RD8@Vista de dibujo2", "DIMENSION", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("RD7@Vista de dibujo2", "DIMENSION", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("RD6@Vista de dibujo2", "DIMENSION", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("RD5@Vista de dibujo2", "DIMENSION", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("RD4@Vista de dibujo2", "DIMENSION", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("RD3@Vista de dibujo2", "DIMENSION", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("RD2@Vista de dibujo2", "DIMENSION", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("RD1@Vista de dibujo2", "DIMENSION", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SketchBoxSelect("0.176917", "0.084781", "0.000000", "0.036173", "0.264620", "0.000000")
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("Hoja 2", "SHEET", 0.1715669099520233942, 0.08478080599913212501, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SketchBoxSelect("0.171567", "0.084781", "0.000000", "0.040288", "0.248571", "0.000000")
+boolstatus = Part.ActivateView("Vista de dibujo2")
+boolstatus = Part.Extension.SelectByRay(0.07444530478660926764, 0.1559758809720840078, 0.001587500000027830538, 0, 0, -1, 0.001399209565942406436, 2, False, 0, 0)
+Part.EditDelete
+Dim myView As Object
+Set myView = Part.DropDrawingViewFromPalette2("Vista de dibujo2", 0.2551079516832905347, 0.1819024111645462238, 0)
+Part.EditUndo2 1
+Set myView = Part.DropDrawingViewFromPalette2("Vista de dibujo2", 0.06827232140745159716, 0.1308724152301761201, 0)
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo2", "DRAWINGVIEW", 0, 0, 0, False, 0, Nothing, 0)
+Set myView = Part.CreateUnfoldedViewAt3(0.1460519119848383007, 0.1308724152301761201, 0, False)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo2", "DRAWINGVIEW", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vista de dibujo2")
+Set myView = Part.CreateUnfoldedViewAt3(0.06827232140745159716, 0.2247017625933727669, 0, False)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo2", "DRAWINGVIEW", 0, 0, 0, False, 0, Nothing, 0)
+Set myView = Part.CreateUnfoldedViewAt3(0.1474922747733083961, 0.210092368596032919, 0, False)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo2", "DRAWINGVIEW", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.Extension.SelectByID2("Hoja 2", "SHEET", 0.09831417385268564901, 0.08478080599913212501, 0, False, 0, Nothing, 0)
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.ActivateView("Vista de dibujo2")
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo2", "DRAWINGVIEW", 0.06950691808328313126, 0.1164687873454748612, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SketchBoxSelect("0.001235", "-0.014404", "0.000000", "-0.005350", "-0.032511", "0.000000")
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo2", "DRAWINGVIEW", 0.05016490349525576375, 0.1115304006421487248, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vista de dibujo5")
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo5", "DRAWINGVIEW", 0.1579863465178764637, 0.170791041082062417, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vista de dibujo3")
+boolstatus = Part.Extension.SelectByRay(0.111483205061555346, 0.09054225715301272848, 0.01590625000000045475, 0, 0, -1, 0.001399209565942406436, 2, False, 0, 0)
+boolstatus = Part.ActivateView("Vista de dibujo2")
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo2", "DRAWINGVIEW", 0.0686838536327287752, 0.07531556481775703027, 0, True, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vista de dibujo4")
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo4", "DRAWINGVIEW", 0.07156457920966902142, 0.1761409600106657314, 0, True, 0, Nothing, 0)
+Part.ViewDisplayHiddenGreyed
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.Extension.SelectByID2("Hoja 2", "SHEET", 0.07979522371521258206, 0.1374569308346109686, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Hoja 2", "SHEET", 0.1218839761839618507, 0.06083119732817371395, 0, False, 0, Nothing, 0)
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Hoja 2", "SHEET", 0.07637735565152188599, 0.06678817986412255436, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SketchBoxSelect("0.076377", "0.066788", "0.000000", "0.079036", "0.067272", "0.000000")
+boolstatus = Part.ActivateView("Vista de dibujo4")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo5")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo3")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo3")
+boolstatus = Part.Extension.SelectByRay(0.1390521725649559726, 0.1032386296535152126, 0.01590625000000045475, 0, 0, -1, 0.000323987783585232426, 1, False, 0, 0)
+boolstatus = Part.Extension.SelectByRay(0.1015077058789025793, 0.1049538590960252538, 0.01590625000000045475, 0, 0, -1, 0.000323987783585232426, 1, True, 0, 0)
+Dim myDisplayDim As Object
+Set myDisplayDim = Part.AddDimension2(0.121899878139855436, 0.1204862146031995263, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo3")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo3")
+boolstatus = Part.Extension.SelectByRay(0.139038278599981302, 0.1026373558835673855, 0.01590625000000045475, 0, 0, -1, 0.000658729698470970665, 1, False, 0, 0)
+boolstatus = Part.Extension.SelectByID2("Elemento de detalle8@Vista de dibujo3", "CENTERMARKSYM", 0.1837931492902148967, 0.08675034550867916083, 0, True, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(0.160737609843730922, 0.1204862146031995263, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Elemento de detalle8@Vista de dibujo3", "CENTERMARKSYM", 0.1824369410874805419, 0.08597536939283095814, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo3")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo3")
+boolstatus = Part.Extension.SelectByID2("Elemento de detalle8@Vista de dibujo3", "CENTERMARKSYM", 0.1828244291454046433, 0.08597536939283095814, 0, False, 0, Nothing, 0)
+boolstatus = Part.DeSelectByID("Elemento de detalle8@Vista de dibujo3", "CENTERMARKSYM", 0.1828244291454046433, 0.08597536939283095814, 0)
+boolstatus = Part.Extension.SelectByRay(0.1820494530295564406, 0.08558788133490696781, 0.01590625000000045475, 0, 0, -1, 0.000658729698470970665, 1, False, 0, 0)
+Set myDisplayDim = Part.AddDimension2(0.1721685075524919117, 0.1012811476808329197, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo3")
+boolstatus = Part.Extension.SelectByRay(0.1899929582170005182, 0.08985024997207206876, 0.01590625000000045475, 0, 0, -1, 0.000658729698470970665, 1, False, 0, 0)
+Set myDisplayDim = Part.AddDimension2(0.160737609843730922, 0.09983478007945864596, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo3")
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo3")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo4")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo3")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo3")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo3")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo2")
+boolstatus = Part.Extension.SelectByRay(0.03988529133520138381, 0.1037961512830163219, 0.04457500000000891305, 0, 0, -1, 0.001021398011842093246, 1, False, 0, 0)
+boolstatus = Part.Extension.SelectByRay(0.0708276428704177341, 0.1013928618433878742, 0.04457500000000891305, 0, 0, -1, 0.001021398011842093246, 1, True, 0, 0)
+Set myDisplayDim = Part.AddDimension2(0.05730913977250767788, 0.1185162991007402966, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja 2")
+Part.ClearSelection2 True
+boolstatus = Part.ActivateView("Vista de dibujo2")
+boolstatus = Part.Extension.SelectByRay(0.05130091617343651711, 0.1110060196019016926, 0.04457500000000891305, 0, 0, -1, 0.001021398011842093246, 1, False, 0, 0)
+boolstatus = Part.Extension.SelectByRay(0.0404083058942919654, 0.07939873758753539235, 0.04057499999998981366, 0, 0, -1, 0.0004620285892034336713, 1, True, 0, 0)
+Set myDisplayDim = Part.AddDimension2(0.03266253248705792978, 0.09611330125577696726, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo2")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo5")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo5")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo5")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo4")
+boolstatus = Part.Extension.SelectByRay(0.04221391551266753805, 0.2565276005825899985, -0.001687500000002728484, 0, 0, -1, 0.0008412042706780033588, 1, False, 0, 0)
+boolstatus = Part.Extension.SelectByRay(0.06769745665379528488, 0.2547957094370764675, -0.001687500000002728484, 0, 0, -1, 0.0008412042706780033588, 1, True, 0, 0)
+Set myDisplayDim = Part.AddDimension2(0.05681128373913876817, 0.278299946411903032, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo4")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo4")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo2")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo4")
+boolstatus = Part.Extension.SelectByRay(0.05393812638907363732, 0.1888093654435881175, 0.01590749999996887709, 0, 0, -1, 0.000491679191170788692, 1, False, 0, 0)
+Set myDisplayDim = Part.AddDimension2(0.04988900363825538031, 0.200667510642412894, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByRay(0.05523963013040808501, 0.1837479620050652684, 0.01590749999985519025, 0, 0, -1, 0.000491679191170788692, 1, False, 0, 0)
+Set myDisplayDim = Part.AddDimension2(0.04757521920921636838, 0.1705883130649058221, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo2")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo5")
+boolstatus = Part.ActivateView("Vista de dibujo4")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo5")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo4")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo4")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo5")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo2")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo2")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo2")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo2")
+boolstatus = Part.Extension.SelectByRay(0.06827412685624341393, 0.08346552972848969576, 0.0415749999999661668, 0, 0, -1, 0.0005660832548445096386, 1, False, 0, 0)
+boolstatus = Part.Extension.SelectByRay(0.07177052343028302028, 0.08329903465353542813, 0.0415749999999661668, 0, 0, -1, 0.0005660832548445096386, 1, True, 0, 0)
+Set myDisplayDim = Part.AddDimension2(0.079096306728270796, 0.06331962565902303497, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo3")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo5")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo5")
+boolstatus = Part.ActivateSheet("Hoja 2")
+Part.ClearSelection2 True
+boolstatus = Part.ActivateView("Vista de dibujo2")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateSheet("Hoja 2")
+Part.SetPickMode
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo2")
+boolstatus = Part.Extension.SelectByID2("RD3@Vista de dibujo2", "DIMENSION", 0.0722320199729867829, 0.06244527026640672718, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo4")
+boolstatus = Part.Extension.SelectByRay(0.06972547541001206106, 0.2697142545737554187, -0.008797500000014224497, 0, 0, -1, 0.0006747852111986093939, 46, False, 0, 0)
+Set myDisplayDim = Part.AddDimension2(0.08361811211115988129, 0.2782483028330319796, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo5")
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo4")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo5")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.Extension.SelectByID2("RD4@Vista de dibujo4", "DIMENSION", 0.08560277449703815322, 0.2794391002645589261, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo5")
+Part.EditDelete
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo4")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo2")
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.Extension.SelectByRay(0.06881432034755986804, 0.08749796422526635864, 0.0415749999999661668, 0, 0, -1, 0.0005936947477847283154, 1, False, 0, 0)
+boolstatus = Part.Extension.SelectByRay(0.0712589457796146547, 0.08924412524816260905, 0.0415749999999661668, 0, 0, -1, 0.0005936947477847283154, 1, True, 0, 0)
+Set myDisplayDim = Part.AddDimension2(0.0796405186895167011, 0.07475098875812336008, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja 2")
+Part.ClearSelection2 True
+boolstatus = Part.ActivateView("Vista de dibujo3")
+Part.SetPickMode
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.Extension.SelectByRay(0.1402323061840168861, 0.09465722441914084517, 0.01590625000000045475, 0, 0, -1, 0.0005936947477847283154, 1, False, 0, 0)
+Set myDisplayDim = Part.AddDimension2(0.14878849519620857, 0.1053088066588079158, 0)
+Part.ClearSelection2 True
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo3")
+boolstatus = Part.Extension.SelectByID2("RD3@Vista de dibujo3", "DIMENSION", 0.1721870529030184449, 0.1025149490221738957, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("RD4@Vista de dibujo3", "DIMENSION", 0.1608370062541927825, 0.1007687879992776314, 0, False, 0, Nothing, 0)
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo3")
+boolstatus = Part.Extension.SelectByRay(0.104140986248308226, 0.09701283063257089279, 0.01590625000000045475, 0, 0, -1, 0.0002892438547569679591, 1, False, 0, 0)
+Set myDisplayDim = Part.AddDimension2(0.1126115545892967112, 0.1013420322229739989, 0)
+Part.ClearSelection2 True
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByRay(0.1048215600242069639, 0.07982834279112749343, 0.01590625000000045475, 0, 0, -1, 0.0002892438547569679591, 1, False, 0, 0)
+Set myDisplayDim = Part.AddDimension2(0.1130735170569792947, 0.08552814816427939393, 0)
+Part.ClearSelection2 True
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByRay(0.1015037628667005698, 0.1007559864000140137, 0.01590625000000045475, 0, 0, -1, 0.0002892438547569679591, 1, False, 0, 0)
+boolstatus = Part.DeSelectByID("", "EDGE", 0.1015037628667005698, 0.1007559864000140137, 0.01590625000000045475)
+boolstatus = Part.Extension.SelectByRay(0.1026096952525360345, 0.0973531175205202548, 0.01590625000000045475, 0, 0, -1, 0.0002892438547569679591, 1, False, 0, 0)
+boolstatus = Part.Extension.SelectByRay(0.1017589780326626087, 0.1113048799264445832, 0.01199465000001964654, 0, 0, -1, 0.0002892438547569679591, 1, True, 0, 0)
+boolstatus = Part.DeSelectByID("", "EDGE", 0.1017589780326626087, 0.1113048799264445832, 0.01199465000001964654)
+boolstatus = Part.DeSelectByID("", "EDGE", 0.1026096952525360345, 0.0973531175205202548, 0.01590625000000045475)
+boolstatus = Part.Extension.SelectByRay(0.1026096952525360345, 0.0973531175205202548, 0.01590625000000045475, 0, 0, -1, 0.0002892438547569679591, 1, False, 0, 0)
+boolstatus = Part.Extension.SelectByRay(0.1034604124724094742, 0.1113899516484319202, 0.01199465000001964654, 0, 0, -1, 0.0002892438547569679591, 1, True, 0, 0)
+Set myDisplayDim = Part.AddDimension2(0.09759046365528277478, 0.1045842138894443607, 0)
+Part.ClearSelection2 True
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo3")
+boolstatus = Part.Extension.SelectByID2("RD6@Vista de dibujo3", "DIMENSION", 0.1131257511121371573, 0.1033653355155294967, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("RD7@Vista de dibujo3", "DIMENSION", 0.1143914099963978526, 0.08691177002014063846, 0, False, 0, Nothing, 0)
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja 2")
+boolstatus = Part.ActivateView("Vista de dibujo3")
+boolstatus = Part.Extension.SelectByID2("RD5@Vista de dibujo3", "DIMENSION", 0.148032623140046754, 0.1057592388909025793, 0, False, 0, Nothing, 0)
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja 2")
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Save
+Dim swErrors As Long
+Dim swWarnings As Long
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+Part.PrintDirect
+Part.PrintPreview
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Part.PrintDirect
