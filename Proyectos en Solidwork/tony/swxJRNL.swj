@@ -1,0 +1,526 @@
+' ******************************************************************************
+' swxJRNL.swj - journal recorded on 04/08/26 by USER
+' *****************************************************************************
+Dim swApp As Object
+
+Dim Part As Object
+Dim boolstatus As Boolean
+Dim longstatus As Long, longwarnings As Long
+
+Sub main()
+
+Set swApp = Application.SldWorks
+
+swApp.ActivateDoc2 "levantamiento_interior - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Dim myModelView As Object
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+boolstatus = Part.Extension.SelectByID2("Hoja1", "SHEET", 0.169270072212273831, 0.06586826370348894399, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("RD1@Vista de dibujo1", "DIMENSION", 0.2059622127415701442, 0.1978091799903421433, 0, False, 0, Nothing, 0)
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Save
+Dim swErrors As Long
+Dim swWarnings As Long
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+Part.ClearSelection2 True
+
+' Save As
+longstatus = Part.SaveAs3("C:\Users\USER\Desktop\project\Proyectos en Solidwork\tony\levantamiento_interior.pdf", 0, 2)
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+boolstatus = Part.Extension.SetUserPreferenceInteger(swUserPreferenceIntegerValue_e.swLineFontSketchCurvesThickness, 0, swLineWeights_e.swLW_THICK6)
+boolstatus = Part.Extension.SelectByID2("Hoja1", "SHEET", 0.01420808107134349796, 0.1098485691324400104, 0, False, 0, Nothing, 0)
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+Part.ClearSelection2 True
+
+' Save As
+longstatus = Part.SaveAs3("C:\Users\USER\Desktop\project\Proyectos en Solidwork\tony\levantamiento_interior.pdf", 0, 2)
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "levantamiento_perimetro - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+boolstatus = Part.Extension.SketchBoxSelect("-7.355434", "18.496761", "0.000000", "-7.479650", "18.496761", "0.000000")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("Line12@Croquis1@levantamiento-23@Vista de dibujo1", "EXTSKETCHSEGMENT", -11.73269912343341126, 11.12561183825478039, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("Line3@Croquis1@levantamiento-23@Vista de dibujo1", "EXTSKETCHSEGMENT", -11.73269912343341126, -1.751406383834100744, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "levantamiento_interior - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "levantamiento_perimetro - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "levantamiento_interior - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("Line2@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -9.483356996729504829, -3.424684657669742283, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.Extension.SelectByID2("Hoja1", "SHEET", 0.01645680720606911007, 0.09054735190010418378, 0, False, 0, Nothing, 0)
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Save As
+longstatus = Part.SaveAs3("C:\Users\USER\Desktop\project\Proyectos en Solidwork\tony\levantamiento_interior.pdf", 0, 2)
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "levantamiento_perimetro - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "levantamiento_interior - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+boolstatus = Part.Extension.SelectByID2("Hoja1", "SHEET", 0.1495384758495124367, 0.0170900077249750669, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Hoja1", "SHEET", 0.1494202369622479043, 0.01697176883771053801, 0, False, 0, Nothing, 0)
+Dim mySheet As Object
+Set mySheet = Part.Sheet("Hoja1")
+mySheet.FocusLocked = TRUE
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "levantamiento_perimetro - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("RD13@Vista de dibujo1", "DIMENSION", 0.1617807504037119537, 0.1053691717121069404, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("RD13@Vista de dibujo1", "DIMENSION", 0.1613082981213276312, 0.1043717724492956161, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0.1622007079880535552, 0.1012483379157549102, 0, False, 0, Nothing, 0)
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "levantamiento_interior - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "levantamiento_perimetro - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.Extension.SetUserPreferenceInteger(swUserPreferenceIntegerValue_e.swSheetMetalColorFlatPatternSketch, 0, 8421504)
+boolstatus = Part.Extension.SetUserPreferenceToggle(swUserPreferenceToggle_e.swWeldmentCollectIdenticalBodies, 0, False)
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "levantamiento_interior - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+boolstatus = Part.Extension.SetUserPreferenceInteger(swUserPreferenceIntegerValue_e.swLineFontSpeedPakDrawingsModelEdgesThickness, 0, swLineWeights_e.swLW_THICK6)
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+Part.ClearSelection2 True
+
+' Save As
+longstatus = Part.SaveAs3("C:\Users\USER\Desktop\project\Proyectos en Solidwork\tony\levantamiento_interior.pdf", 0, 2)
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("Line18@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -9.560518488451849706, 7.68215270020983354, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line30@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -10.82373110266120619, 5.807024611782508394, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line12@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -11.73269912343341126, 7.20205301080645377, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line23@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -11.73269912343341126, 2.73766173210592445, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line28@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -6.76466949598552425, 3.844535602858124346, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line31@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -10.23208686944177614, 1.212849621208066608, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line3@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -11.73269912343341126, -0.5091682887671842295, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line2@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -10.71305274735099289, -3.41463418720032541, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line27@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -6.621706400286700323, -2.433804843143545948, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line9@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -5.693792787708156666, 1.18093952118801937, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line10@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -4.448189495985523934, 0.5977055819850155549, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line33@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -4.067780217532722453, -0.1186084905762328362, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line11@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -0.4854788224060195279, -0.0141556100017691637, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line34@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -0.5947678401847228402, 0.6892251674209740608, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line1@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", 0.08537378697798424232, -0.8134928642270600196, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line21@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", 1.500887372181118451, -3.505200000000000315, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByRay(0.1481053404608095869, 0.1047366050193560966, -74499.99872999999207, 0, 0, -1, 0.0008363047023461042976, 2, True, 0, 1)
+boolstatus = Part.Extension.SelectByID2("Arc1@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", 5.235359342006198347, -3.409527214848607546, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByRay(0.1476133965182530594, 0.1044906330480778328, -74499.99872999999207, 0, 0, -1, 0.0008363047023461042976, 2, False, 0, 1)
+boolstatus = Part.Extension.SelectByRay(0.1503190882023139885, 0.1067043807895822344, -74499.99872999999207, 0, 0, -1, 0.0008363047023461042976, 2, False, 0, 1)
+boolstatus = Part.Extension.SelectByID2("Line26@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", 6.206893447101431427, 0.1918518293758753046, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line14@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", 6.19397272804452026, 2.517129094862410099, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line15@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", 5.001828450748650567, 1.801206386318304098, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line16@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -0.4806739421281297497, 3.440055062116059936, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line17@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -4.660710508339442448, 12.37171104935933741, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line13@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -1.081818326240673755, 15.55225952118801658, 0, True, 0, Nothing, 1)
+Part.PrintPreview
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+Part.ClearSelection2 True
+
+' Save As
+longstatus = Part.SaveAs3("C:\Users\USER\Desktop\project\Proyectos en Solidwork\tony\levantamiento_interior.pdf", 0, 2)
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+
+' Save As
+longstatus = Part.SaveAs3("C:\Users\USER\Desktop\project\Proyectos en Solidwork\tony\levantamiento_interior.pdf", 0, 2)
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("Line2@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -9.677325665540328359, -3.423099325381743441, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line3@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -11.73269912343341126, -2.870499213038537611, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line27@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -6.617277930032042121, -2.54577631254539849, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line27@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -6.615993847705405884, -2.578243637982482461, 0, False, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line31@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -7.90615099859535686, 1.191444397006590439, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line9@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -5.62000119632467765, 1.18093952118801937, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line10@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -4.448189495985523934, 0.2656434207593545427, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line33@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -4.099270195639578063, -0.1195266765577257667, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line1@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", 0.1321367966171841934, -1.25907898612511171, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Point28@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHPOINT", -0.8530774375862646419, -0.024874064429694899, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line11@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -0.5320173326160571037, -0.01551258165571638495, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line34@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -0.6753710500403296013, 0.4663968605303395187, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line21@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", 1.095033619571982308, -3.505200000000000315, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Arc1@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", 5.567954128933878089, -3.247353991355280911, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line26@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", 6.206893447101431427, -0.3615851060002228667, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line14@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", 6.187703962881322184, 2.846260935737078057, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line15@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", 4.748401344604500807, 1.7933116021694262, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line16@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -0.4322127337839873906, 3.05850740490005002, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line28@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -6.76466949598552425, 2.258016388113305517, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line23@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -11.73269912343341126, 2.221120592421571338, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line12@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -11.73269912343341126, 8.124447903099953905, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line30@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -10.7858198790401012, 5.807373502846760793, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByRay(0.05193029969100759757, 0.1726248690921574902, -74499.99872999999207, 0, 0, -1, 0.0008363047023461042976, 2, True, 0, 1)
+boolstatus = Part.Extension.SelectByID2("Line18@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -9.563113534432597262, 7.091831376935304299, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByRay(0.05684973911657290047, 0.2060770571860016664, -74499.99872999999207, 0, 0, -1, 0.0008363047023461042976, 2, False, 0, 1)
+boolstatus = Part.Extension.SelectByID2("Line17@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -8.497873260280393026, 12.37171104935933741, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line13@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -8.79303962581430909, 15.55225952118801658, 0, True, 0, Nothing, 1)
+Part.SetLineWidth 0
+Part.SetLineWidth 0
+Part.SetLineWidth 0
+Part.SetLineWidth 0
+Part.SetLineWidth 0
+Part.SetLineWidth 0
+Part.SetLineWidth 0
+Part.SetLineWidth 0
+Part.SetLineWidth 0
+Part.SetLineWidth 0
+Part.SetLineWidth 0
+Part.SetLineWidth 0
+Part.SetLineWidth 0
+Part.SetLineWidth 0
+Part.SetLineWidth 0
+Part.SetLineWidth 0
+Part.SetLineWidth 0
+Part.SetLineWidth 0
+Part.SetLineWidth 0
+Part.SetLineWidth 0
+Part.SetLineWidth 0
+Part.SetLineWidth 0
+Part.SetLineWidth 0
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+
+' Save All
+boolstatus = Part.Save3(5, swErrors, swWarnings)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+
+' Save As
+longstatus = Part.SaveAs3("C:\Users\USER\Desktop\project\Proyectos en Solidwork\tony\levantamiento_interior.pdf", 0, 2)
+Part.EditUndo2 1
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "levantamiento_perimetro - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+
+' Save As
+longstatus = Part.SaveAs3("C:\Users\USER\Desktop\levantamiento_perimetro.pdf", 0, 2)
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("Line23@Croquis1@levantamiento-23@Vista de dibujo1", "EXTSKETCHSEGMENT", -11.73269912343341126, 1.980705667849396612, 0, False, 0, Nothing, 0)
+Part.SetLineColor 0
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("Line3@Croquis1@levantamiento-23@Vista de dibujo1", "EXTSKETCHSEGMENT", -11.73269912343341126, -1.679469010352149461, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("RD4@Vista de dibujo1", "DIMENSION", 0.05461728538671845046, 0.1037865934843479332, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line27@Croquis1@levantamiento-23@Vista de dibujo1", "EXTSKETCHSEGMENT", -6.66773841883278795, -1.269910211421147572, 0, True, 0, Nothing, 1)
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("Line2@Croquis1@levantamiento-23@Vista de dibujo1", "EXTSKETCHSEGMENT", -8.752709103671755031, -3.43065634218520632, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line27@Croquis1@levantamiento-23@Vista de dibujo1", "EXTSKETCHSEGMENT", -6.644549627646645362, -1.856226224277738979, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line3@Croquis1@levantamiento-23@Vista de dibujo1", "EXTSKETCHSEGMENT", -11.73269912343341126, -1.855862970747405027, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line31@Croquis1@levantamiento-23@Vista de dibujo1", "EXTSKETCHSEGMENT", -9.764129722893345686, 1.20854308474500094, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line28@Croquis1@levantamiento-23@Vista de dibujo1", "EXTSKETCHSEGMENT", -6.76466949598552425, 2.46578905893634559, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0.0413877383570743218, 0.1737561977744658259, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line12@Croquis1@levantamiento-23@Vista de dibujo1", "EXTSKETCHSEGMENT", -11.73269912343341126, 7.007933539114167054, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line30@Croquis1@levantamiento-23@Vista de dibujo1", "EXTSKETCHSEGMENT", -10.77972076634571685, 5.807429632027401034, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line18@Croquis1@levantamiento-23@Vista de dibujo1", "EXTSKETCHSEGMENT", -9.559599840380485603, 7.891126856788982735, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line17@Croquis1@levantamiento-23@Vista de dibujo1", "EXTSKETCHSEGMENT", -6.855857409571681771, 12.37171104935933741, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line16@Croquis1@levantamiento-23@Vista de dibujo1", "EXTSKETCHSEGMENT", -0.9532896718573907746, 7.161081231357888655, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line9@Croquis1@levantamiento-23@Vista de dibujo1", "EXTSKETCHSEGMENT", -5.841592137298968979, 1.18093952118801937, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line10@Croquis1@levantamiento-23@Vista de dibujo1", "EXTSKETCHSEGMENT", -4.448189495985523934, 0.3490615341932835625, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line33@Croquis1@levantamiento-23@Vista de dibujo1", "EXTSKETCHSEGMENT", -3.637541157413640924, -0.106063563668010355, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line34@Croquis1@levantamiento-23@Vista de dibujo1", "EXTSKETCHSEGMENT", -0.4675735055093702686, 1.040855062713761381, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line11@Croquis1@levantamiento-23@Vista de dibujo1", "EXTSKETCHSEGMENT", -0.5545538046251354825, -0.01616970096525754963, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line1@Croquis1@levantamiento-23@Vista de dibujo1", "EXTSKETCHSEGMENT", 0.08761720658702516762, -0.8348695175069769103, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line21@Croquis1@levantamiento-23@Vista de dibujo1", "EXTSKETCHSEGMENT", 1.434658729005306554, -3.505200000000000315, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Arc1@Croquis1@levantamiento-23@Vista de dibujo1", "EXTSKETCHSEGMENT", 5.502917984083189218, -3.286581717986492457, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line26@Croquis1@levantamiento-23@Vista de dibujo1", "EXTSKETCHSEGMENT", 6.206893447101431427, -0.003726386597228348307, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line15@Croquis1@levantamiento-23@Vista de dibujo1", "EXTSKETCHSEGMENT", 4.034757358564748486, 1.771080100122742973, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line14@Croquis1@levantamiento-23@Vista de dibujo1", "EXTSKETCHSEGMENT", 6.199973096104262282, 2.202089029711693513, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line13@Croquis1@levantamiento-23@Vista de dibujo1", "EXTSKETCHSEGMENT", 5.138931897305665686, 15.55225952118801658, 0, True, 0, Nothing, 1)
+Part.SetLineColor 0
+Part.SetLineColor 0
+Part.SetLineColor 0
+Part.SetLineColor 0
+Part.SetLineColor 0
+Part.SetLineColor 0
+Part.SetLineColor 0
+Part.SetLineColor 0
+Part.SetLineColor 0
+Part.SetLineColor 0
+Part.SetLineColor 0
+Part.SetLineColor 0
+Part.SetLineColor 0
+Part.SetLineColor 0
+Part.SetLineColor 0
+Part.SetLineColor 0
+Part.SetLineColor 0
+Part.SetLineColor 0
+Part.SetLineColor 0
+Part.SetLineColor 0
+Part.SetLineColor 0
+Part.SetLineColor 0
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.Extension.SelectByID2("Hoja1", "SHEET", 0.0328620302713036605, 0.07379962021715455456, 0, False, 0, Nothing, 0)
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+Part.ClearSelection2 True
+
+' Save As
+longstatus = Part.SaveAs3("C:\Users\USER\Desktop\levantamiento_perimetro.pdf", 0, 2)
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "levantamiento_interior - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+boolstatus = Part.Extension.SelectByID2("Hoja1", "SHEET", 0.04291274481314361067, 0.08383858142798783497, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("Line2@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -8.422663342506011119, -3.433353851040121363, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line21@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", 3.25323694764406568, -3.505200000000000315, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Arc1@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", 5.369325920682410214, -3.355186200969433763, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line26@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", 6.206893447101431427, -0.2729050581751468751, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line1@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", 0.3156990115130798857, -3.008170331903563088, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line11@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -0.4207575997324202177, -0.01226846612499895434, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line33@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -1.959805237290137114, -0.0571440757827789414, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line34@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -0.5415223557540196353, 0.8364227935021137927, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line10@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -4.448189495985523934, 0.5643301435714651593, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line9@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -5.11911506982204223, 1.180939521188019148, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line27@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -6.710615146243607221, -0.1857954053473611644, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line28@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -6.76466949598552425, 2.145774413537282932, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line31@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -8.838590730806210161, 1.200025494092072043, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line3@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -11.73269912343341126, -0.505470391993649848, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line23@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -11.73269912343341126, 2.796957348229093476, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Point9@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHPOINT", -9.568710758103348368, 5.81857436781378734, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line30@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -10.28284516157835426, 5.812002300540578759, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line18@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -9.565022141225385965, 6.657661309858560195, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line12@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -11.73269912343341126, 7.820368558708755913, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line17@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -8.002925209171474208, 12.37171104935933741, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line13@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -7.816872942116678935, 15.55225952118801658, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line16@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", -1.240432939873368667, 9.421834624439298977, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line15@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", 0.7941678836846728373, 1.670128963488007212, 0, True, 0, Nothing, 1)
+boolstatus = Part.Extension.SelectByID2("Line14@Croquis1@levantamiento-11@Vista de dibujo1", "EXTSKETCHSEGMENT", 6.175289951387967768, 3.498039451772992692, 0, True, 0, Nothing, 1)
+Part.SetLineColor 0
+Part.SetLineColor 0
+Part.SetLineColor 0
+Part.SetLineColor 0
+Part.SetLineColor 0
+Part.SetLineColor 0
+Part.SetLineColor 0
+Part.SetLineColor 0
+Part.SetLineColor 0
+Part.SetLineColor 0
+Part.SetLineColor 0
+Part.SetLineColor 0
+Part.SetLineColor 0
+Part.SetLineColor 0
+Part.SetLineColor 0
+Part.SetLineColor 0
+Part.SetLineColor 0
+Part.SetLineColor 0
+Part.SetLineColor 0
+Part.SetLineColor 0
+Part.SetLineColor 0
+Part.SetLineColor 0
+Part.SetLineColor 0
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.Extension.SelectByID2("Hoja1", "SHEET", 0.03950178658380554264, 0.06709387739305561205, 0, False, 0, Nothing, 0)
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "malla - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+
+' Save As
+longstatus = Part.SaveAs3("C:\Users\USER\Desktop\project\Proyectos en Solidwork\nave\malla.pdf", 0, 2)
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "levantamiento_interior - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Part.ClearSelection2 True
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "malla - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc

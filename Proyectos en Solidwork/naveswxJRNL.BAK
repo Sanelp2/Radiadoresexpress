@@ -1,0 +1,2561 @@
+' ******************************************************************************
+' swxJRNL.swj - journal recorded on 02/21/26 by USER
+' *****************************************************************************
+Dim swApp As Object
+
+Dim Part As Object
+Dim boolstatus As Boolean
+Dim longstatus As Long, longwarnings As Long
+
+Sub main()
+
+Set swApp = Application.SldWorks
+
+swApp.ActivateDoc2 "nave.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Dim myModelView As Object
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+boolstatus = Part.Extension.SelectByID2("Extruir-Lámina1", "BODYFEATURE", 0, 0, 0, False, 0, Nothing, 0)
+Part.FeatEdit
+Part.ClearSelection2 True
+boolstatus = Part.EditRebuild3()
+boolstatus = Part.Extension.SelectByID2("Extruir-Lámina1", "BODYFEATURE", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Extruir-Lámina1", "BODYFEATURE", 0, 0, 0, False, 0, Nothing, 0)
+Part.FeatEdit
+Part.ClearSelection2 True
+boolstatus = Part.EditRebuild3()
+boolstatus = Part.Extension.SelectByID2("Extruir-Lámina1", "BODYFEATURE", 0, 0, 0, False, 0, Nothing, 0)
+Part.FeatEdit
+Part.ClearSelection2 True
+Dim skSegment As Object
+Set skSegment = Part.SketchManager.CreateLine(11.887200, 6.867453, 0.000000, -2.177343, 1.647623, 0.000000)
+Set skSegment = Part.SketchManager.CreateLine(-2.177343, 1.647623, 0.000000, -2.177343, -5.308600, 0.000000)
+Set skSegment = Part.SketchManager.CreateLine(-2.177343, -5.308600, 0.000000, 0.000000, -5.308600, 0.000000)
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Line12", "SKETCHSEGMENT", 8.895024546407363175, 5.733853686512073722, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Point14", "SKETCHPOINT", 12.00112266900122115, 6.560494894978155855, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Point6", "SKETCHPOINT", 11.88719999999999644, 4.172078181077297998, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Point14", "SKETCHPOINT", 11.88719999999999644, 8.02741548794431381, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Point6", "SKETCHPOINT", 11.88719999999999644, 4.172078181077297998, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Point14", "SKETCHPOINT", 11.88719999999999644, 8.02741548794431381, 0, True, 0, Nothing, 0)
+Dim myDisplayDim As Object
+Set myDisplayDim = Part.AddDimension2(14.9584637915730525, 6.472011507662679186, 0)
+Part.ClearSelection2 True
+Dim myDimension As Object
+Set myDimension = Part.Parameter("D8@Croquis1")
+myDimension.SystemValue = 0.8636
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Point15", "SKETCHPOINT", -2.177342770851724563, -1.693353296782734496, 0, False, 0, Nothing, 0)
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.EditRebuild3()
+Part.SetPickMode
+Part.ClearSelection2 True
+Part.SetPickMode
+Part.SetPickMode
+boolstatus = Part.Extension.SelectByID2("Extruir-Lámina1", "BODYFEATURE", 0, 0, 0, False, 0, Nothing, 0)
+Part.FeatEdit
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Point16", "SKETCHPOINT", -1.940077756910454143, -5.308600000000000207, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Point12", "SKETCHPOINT", 0, -5.308600000000000207, 0, True, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(-1.101522872579803192, -6.837269304762122246, 0)
+Part.ClearSelection2 True
+Set myDimension = Part.Parameter("D9@Croquis1")
+myDimension.SystemValue = 0.256
+Part.SetPickMode
+Part.ClearSelection2 True
+
+' Roll View
+Dim swModelView As Object
+Set swModelView = Part.ActiveView
+swModelView.RollBy 0
+boolstatus = Part.Extension.SelectByID2("Desconocido", "MANIPULATOR", 0.4097232761476021778, -2.503129406525028244, 0, False, 0, Nothing, 0)
+Part.EditDelete
+Part.SketchManager.SketchConstraintsDel 1, "sgVERTICAL2D"
+boolstatus = Part.Extension.SelectByID2("Point1", "SKETCHPOINT", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Point12", "SKETCHPOINT", 0, -5.308600000000000207, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line10", "SKETCHSEGMENT", -0.7023257766895447674, -3.444093989694923863, 0, False, 0, Nothing, 0)
+Part.EditDelete
+Part.SetPickMode
+Part.SetPickMode
+Part.SetPickMode
+boolstatus = Part.Extension.SelectByID2("D7@Croquis1@nave.SLDPRT", "DIMENSION", -2.356142316806330683, -2.959354658971037111, 0, False, 0, Nothing, 0)
+Part.EditDelete
+Set skSegment = Part.SketchManager.CreateLine(0.000000, 0.000000, 0.000000, -0.445699, -2.845298, 0.000000)
+Set skSegment = Part.SketchManager.CreateLine(-0.445699, -2.845298, 0.000000, -0.445699, -5.162539, 0.000000)
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Point12", "SKETCHPOINT", -1.236700104954681745, -5.162538795050849671, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line11", "SKETCHSEGMENT", 23.89556859055798554, -2.558001029463691012, 0, False, 0, Nothing, 0)
+Part.SelectMidpoint
+Part.EditDelete
+' MSGBOX
+' Los puntos finales y los puntos centrales del croquis no se pueden eliminar a menos que el punto final sea un punto de partición de una curva.
+
+Part.EditDelete
+' MSGBOX
+' Los puntos finales y los puntos centrales del croquis no se pueden eliminar a menos que el punto final sea un punto de partición de una curva.
+
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SketchBoxSelect("20.314070", "-5.253356", "0.000000", "20.498683", "-5.253356", "0.000000")
+boolstatus = Part.Extension.SketchBoxSelect("26.445914", "-2.628827", "0.000000", "26.361466", "-2.628827", "0.000000")
+boolstatus = Part.EditRebuild3()
+boolstatus = Part.Extension.SelectByID2("Extruir-Lámina1", "BODYFEATURE", 0, 0, 0, False, 0, Nothing, 0)
+Part.FeatEdit
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("D5@Croquis1@nave.SLDPRT", "DIMENSION", 11.32682067627104416, -5.913048842562356633, 0, False, 0, Nothing, 0)
+Part.EditDelete
+Part.SetPickMode
+Part.SetPickMode
+Part.SetPickMode
+boolstatus = Part.Extension.SelectByID2("Line11", "SKETCHSEGMENT", 23.6666965469715862, -4.074426409123148574, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("Line9", "SKETCHSEGMENT", 22.63716310114558894, 0.6170129227085023871, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Line15", "SKETCHSEGMENT", -0.3472948439309568869, -2.064507170883761233, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line16", "SKETCHSEGMENT", -0.5069091352162118369, -3.852187233278604239, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line4", "SKETCHSEGMENT", 11.7833912937483305, 2.851613000702054812, 0, True, 0, Nothing, 0)
+Part.SketchMirror
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Line16", "SKETCHSEGMENT", -0.4430634187021098569, -4.682181547961922874, 0, False, 0, Nothing, 0)
+boolstatus = Part.DeSelectByID("Line16", "SKETCHSEGMENT", -0.4456990721886668894, -4.682181547961922874, 0)
+Part.SetPickMode
+Part.SetPickMode
+boolstatus = Part.Extension.SelectByID2("Line17", "SKETCHSEGMENT", 24.26522887225517167, -4.107570099335010383, 0, False, 0, Nothing, 0)
+Part.SelectMidpoint
+' MSGBOX
+' Esta relación no se ha podido agregar porque causaría geometría inválida en el croquis.
+
+Part.ClearSelection2 True
+Set skSegment = Part.SketchManager.CreateCenterLine(24.220099, -5.162539, 0.000000, 27.699631, -5.162539, 0.000000)
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Line17", "SKETCHSEGMENT", 24.25422692507315503, -3.824168938516292471, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line19", "SKETCHSEGMENT", 25.40269482919478605, -5.189914554228503007, 0, True, 0, Nothing, 0)
+boolstatus = Part.DeSelectByID("Line19", "SKETCHSEGMENT", 25.40269482919478605, -5.162538795050839013, 0)
+boolstatus = Part.DeSelectByID("Line17", "SKETCHSEGMENT", 24.22009907218866687, -3.824168938516291583, 0)
+boolstatus = Part.Extension.SelectByID2("Line17", "SKETCHSEGMENT", 24.25422692507315503, -3.824168938516292471, 0, False, 0, Nothing, 0)
+boolstatus = Part.DeSelectByID("Line17", "SKETCHSEGMENT", 24.22009907218866687, -3.824168938516291583, 0)
+Part.SetPickMode
+Part.EditUndo2 1
+boolstatus = Part.Extension.SelectByID2("Line13", "SKETCHSEGMENT", -0.5464718693372141445, -4.072486323191238711, 0, False, 0, Nothing, 0)
+boolstatus = Part.DeSelectByID("Line13", "SKETCHSEGMENT", -0.7016990721886668947, -4.072486323191238711, 0)
+boolstatus = Part.Extension.SelectByID2("Line16", "SKETCHSEGMENT", -0.4843925231684771404, -4.289764034781818225, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line17", "SKETCHSEGMENT", 24.16110790582005308, -4.041446650106870209, 0, True, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(17.58069721193394486, -9.93898453613687316, 0)
+Part.ClearSelection2 True
+Set myDimension = Part.Parameter("D5@Croquis1")
+myDimension.SystemValue = 23.7744
+Part.SetPickMode
+Part.ClearSelection2 True
+Part.SetPickMode
+boolstatus = Part.Extension.SelectByID2("Point2", "SKETCHPOINT", 5.943599999999999994, 2.377439999999999998, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Point6", "SKETCHPOINT", 11.88719999999999644, 4.172078181077297998, 0, True, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(9.850000310924293956, 7.002484862723873604, 0)
+Part.ClearSelection2 True
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("D2@Croquis1@nave.SLDPRT", "DIMENSION", 2.961534572546643318, -1.49627156774205794, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("Line13", "SKETCHSEGMENT", -0.3485074056348231863, -0.5122050336881081023, 0, False, 0, Nothing, 0)
+boolstatus = Part.DeSelectByID("Line13", "SKETCHSEGMENT", -0.2560000000000056675, -0.5122050336881081023, 0)
+Part.SetPickMode
+Part.SetPickMode
+boolstatus = Part.Extension.SelectByID2("Point1", "SKETCHPOINT", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Point15", "SKETCHPOINT", -0.256000000000005945, 2.042546460967656241, 0, True, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(-0.0622808329399564542, 2.975795453372964694, 0)
+Part.ClearSelection2 True
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("D2@Croquis1@nave.SLDPRT", "DIMENSION", -0.2038024858444718035, 2.975795453372964694, 0, False, 0, Nothing, 0)
+' MSGBOX
+' La cota seleccionada es una cota conducida. Su valor no se puede cambiar.
+
+Part.SetPickMode
+Part.ClearSelection2 True
+Part.SetPickMode
+Part.SetPickMode
+Part.SetPickMode
+boolstatus = Part.Extension.SelectByID2("D2@Croquis1@nave.SLDPRT", "DIMENSION", -0.2321068164253734523, 3.060708445115673193, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("Point1", "SKETCHPOINT", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Point17", "SKETCHPOINT", 0, -2.84529834585953445, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Desconocido", "MANIPULATOR", 0, -1.575812625609797513, 0, False, 0, Nothing, 0)
+Part.EditDelete
+Part.SketchManager.SketchConstraintsDel 1, "sgVERTICAL2D"
+boolstatus = Part.Extension.SelectByID2("Point1", "SKETCHPOINT", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Line1", "SKETCHSEGMENT", 2.507288192784496772, 1.124012929447971487, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Part.EditUndo2 1
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Point1", "SKETCHPOINT", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Line15", "SKETCHSEGMENT", 0.01288414735068954542, -1.311699256093277199, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("Point1", "SKETCHPOINT", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SketchBoxSelect("5.353843", "-3.776757", "0.000000", "5.177768", "-3.952833", "0.000000")
+boolstatus = Part.Extension.SelectByID2("Point1", "SKETCHPOINT", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Desconocido", "MANIPULATOR", 0.4237271665986099833, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Desconocido", "MANIPULATOR", -0.6033803815211946642, -0.07917019834951233292, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Desconocido", "MANIPULATOR", 0.541110886383730616, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Line6", "SKETCHSEGMENT", 8.376474182040517746, 3.383649535311540113, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Point1", "SKETCHPOINT", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line1", "SKETCHSEGMENT", 1.128029485309333779, 0.507748400576089054, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Part.EditUndo2 1
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("D4@Croquis1@nave.SLDPRT", "DIMENSION", 3.53439574090430142, 5.320480911766027887, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("Point1", "SKETCHPOINT", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("D7@Croquis1@nave.SLDPRT", "DIMENSION", 9.403581730160325947, 7.374696008005635406, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("Point1", "SKETCHPOINT", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SketchBoxSelect("7.143945", "-4.246292", "0.000000", "7.055907", "-4.275638", "0.000000")
+boolstatus = Part.Extension.SelectByID2("Desconocido", "MANIPULATOR", 0.5117649564374495696, 0, 0, False, 0, Nothing, 0)
+Part.EditDelete
+Part.SketchManager.SketchConstraintsDel 1, "sgSYMMETRIC"
+boolstatus = Part.Extension.SelectByID2("Point1", "SKETCHPOINT", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Line1", "SKETCHSEGMENT", 0.6291486762225702023, 0.126251311274447886, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Desconocido", "MANIPULATOR", 0.3936380458108809655, 0.1574552183243523862, 0, False, 0, Nothing, 0)
+Part.EditDelete
+Part.SketchManager.SketchConstraintsDel 1, "sgSYMMETRIC"
+boolstatus = Part.Extension.SelectByID2("Point1", "SKETCHPOINT", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Desconocido", "MANIPULATOR", -0.01646178259559150092, -0.4019754277585931845, 0, False, 0, Nothing, 0)
+Part.EditDelete
+Part.SketchManager.SketchConstraintsDel 1, "sgCOINCIDENT"
+boolstatus = Part.Extension.SelectByID2("Point1", "SKETCHPOINT", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Point1", "SKETCHPOINT", 1.304105064987012952, 0.507748400576089054, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Point11", "SKETCHPOINT", 23.77439999999999287, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Point1", "SKETCHPOINT", 1.304105064987012952, 0.507748400576089054, 0, True, 0, Nothing, 1)
+Part.SketchAddConstraints "sgHORIZONTALPOINTS2D"
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Point1", "SKETCHPOINT", 1.304105064987012952, 0.507748400576089054, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SketchBoxSelect("5.295152", "-3.336568", "0.000000", "4.972346", "-3.571336", "0.000000")
+boolstatus = Part.Extension.SelectByID2("Point1", "SKETCHPOINT", 1.979061453751455701, 0.4197106107372494677, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line13", "SKETCHSEGMENT", -0.3099210820583913062, 0.4197106107372494677, 0, True, 0, Nothing, 1)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Point1", "SKETCHPOINT", 1.979061453751455701, 0.4197106107372494677, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line13", "SKETCHSEGMENT", -0.2218832922195517199, -0.1378620582420726493, 0, True, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(0.541110886383730616, 3.442341395204100429, 0)
+Part.ClearSelection2 True
+Set myDimension = Part.Parameter("D2@Croquis1")
+myDimension.SystemValue = 0.6096
+Part.ClearSelection2 True
+Part.EditUndo2 1
+boolstatus = Part.Extension.SelectByID2("D2@Croquis1@nave.SLDPRT", "DIMENSION", 0.8345701858465304213, 4.175989643861103495, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("D2@Croquis1@nave.SLDPRT", "DIMENSION", 0.7465323960076908349, 4.087951854022263021, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("D2@Croquis1@nave.SLDPRT", "DIMENSION", 0.5117649564374495696, 3.999914064183422546, 0, False, 0, Nothing, 0)
+Set myDimension = Part.Parameter("D2@Croquis1")
+myDimension.SystemValue = 0.6096
+Part.SetPickMode
+Part.ClearSelection2 True
+Part.EditUndo2 1
+boolstatus = Part.Extension.SelectByID2("Line13", "SKETCHSEGMENT", -0.4273048018435119388, -1.517120765717237418, 0, False, 0, Nothing, 0)
+Part.SketchAddConstraints "sgVERTICAL2D"
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("D2@Croquis1@nave.SLDPRT", "DIMENSION", 0.541110886383730616, 3.882530344398302802, 0, False, 0, Nothing, 0)
+Set myDimension = Part.Parameter("D2@Croquis1")
+myDimension.SystemValue = 0.6096
+boolstatus = Part.Extension.SelectByID2("Point14", "SKETCHPOINT", 14.23296418688199694, 6.004262436998256014, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SketchBoxSelect("12.199612", "-2.961304", "0.000000", "12.111926", "-2.961304", "0.000000")
+boolstatus = Part.Extension.SelectByID2("Point16", "SKETCHPOINT", 1.168540890882326266, -4.496131375126957153, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Point1@Origen", "EXTSKETCHPOINT", 0, 0, 0, True, 0, Nothing, 1)
+Part.SketchAddConstraints "sgCOINCIDENT"
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Line9", "SKETCHSEGMENT", 22.9762365278077425, 1.747550193541271391, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Line17", "SKETCHSEGMENT", 24.0005529600873686, 0.8407782698838968116, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SketchBoxSelect("24.521107", "0.572105", "0.000000", "16.746378", "5.895192", "0.000000")
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("Line14", "SKETCHSEGMENT", 0.1513004182581187962, -0.01322199704098991901, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SketchBoxSelect("1.545810", "0.430840", "0.000000", "1.538019", "0.454211", "0.000000")
+boolstatus = Part.Extension.SelectByID2("Point15", "SKETCHPOINT", 0, 2.042546460967655797, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Point1", "SKETCHPOINT", 0.6096000000000000307, 1.731550071533022539, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Desconocido", "MANIPULATOR", 0.2559999999999997833, 1.805138972425561317, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SketchBoxSelect("1.324963", "-1.103089", "0.000000", "1.257653", "-0.981931", "0.000000")
+boolstatus = Part.Extension.SelectByID2("Point1", "SKETCHPOINT", 0.6096000000000000307, 1.731550071533022539, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SketchBoxSelect("7.945506", "2.823424", "0.000000", "7.739474", "2.823424", "0.000000")
+boolstatus = Part.Extension.SelectByID2("Line3", "SKETCHSEGMENT", 9.90281490594634306, 4.918087650187759508, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("Line4", "SKETCHSEGMENT", 10.79562229674497331, 7.733864805783442264, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("Point1", "SKETCHPOINT", 0.6096000000000000307, 4.725990109863323241, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Desconocido", "MANIPULATOR", 10.70421813547169876, 12.66405796022868202, 0, False, 0, Nothing, 0)
+Part.EditDelete
+Part.SketchManager.SketchConstraintsDel 1, "sgCOINCIDENT"
+boolstatus = Part.Extension.SelectByID2("Line12", "SKETCHSEGMENT", 8.717117329018666538, 11.33932408925999447, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line6", "SKETCHSEGMENT", 9.368387563813348251, 11.69072348082037038, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SketchBoxSelect("12.176421", "10.944079", "0.000000", "11.932950", "10.944079", "0.000000")
+boolstatus = Part.Extension.SelectByID2("Point8", "SKETCHPOINT", 10.72373338959063815, 12.92131160904053822, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line12", "SKETCHSEGMENT", 9.985180985743857818, 12.48606236699392191, 0, False, 0, Nothing, 0)
+Part.EditDelete
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("D8@Croquis1@nave.SLDPRT", "DIMENSION", 14.05504368613480892, 14.86169092577680217, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("Line12", "SKETCHSEGMENT", 9.953042802180114279, 12.61786138241696875, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SketchBoxSelect("9.777744", "16.053725", "0.000000", "9.742684", "15.948546", "0.000000")
+boolstatus = Part.Extension.SelectByID2("Point14", "SKETCHPOINT", 10.5232528662014424, 14.42234587138573509, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SketchBoxSelect("15.422377", "12.758101", "0.000000", "15.071779", "12.652921", "0.000000")
+boolstatus = Part.Extension.SelectByID2("Point14", "SKETCHPOINT", 11.64078438145206995, 15.4927679848467541, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Point6", "SKETCHPOINT", 11.64078438145207173, 12.44629084075080527, 0, True, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(14.68612074520476085, 13.80989582732687992, 0)
+Part.ClearSelection2 True
+Set myDimension = Part.Parameter("D1@Croquis1")
+myDimension.SystemValue = 0.8636
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Point8", "SKETCHPOINT", 11.64078438145206995, 13.5248723407716227, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Point8", "SKETCHPOINT", 11.64078438145206995, 13.5248723407716227, 0, True, 0, Nothing, 0)
+boolstatus = Part.DeSelectByID("Point8", "SKETCHPOINT", 11.64078438145206995, 13.5248723407716227, 0)
+boolstatus = Part.DeSelectByID("Point8", "SKETCHPOINT", 11.64078438145206995, 13.5248723407716227, 0)
+boolstatus = Part.Extension.SelectByID2("Point8", "SKETCHPOINT", 11.64078438145206995, 13.5248723407716227, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Point1", "SKETCHPOINT", 0.6096000000000000307, 4.462533837014545313, 0, True, 0, Nothing, 0)
+boolstatus = Part.DeSelectByID("Point1", "SKETCHPOINT", 0.6096000000000000307, 4.462533837014545313, 0)
+boolstatus = Part.DeSelectByID("Point8", "SKETCHPOINT", 11.64078438145206995, 13.5248723407716227, 0)
+boolstatus = Part.Extension.SelectByID2("Point8", "SKETCHPOINT", 11.64078438145206995, 13.5248723407716227, 0, False, 0, Nothing, 0)
+boolstatus = Part.DeSelectByID("Point8", "SKETCHPOINT", 11.64078438145206995, 13.5248723407716227, 0)
+Part.SetPickMode
+Part.SetPickMode
+Part.SetPickMode
+boolstatus = Part.Extension.SelectByID2("Point1", "SKETCHPOINT", 0.6096000000000000307, 4.462533837014545313, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Line1", "SKETCHSEGMENT", 2.73396247859623287, 6.16000865678400622, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Line1", "SKETCHSEGMENT", 2.601905926014708825, 6.093980380493244198, 0, False, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(4.219598695138394362, 3.683948295880409063, 0)
+Part.ClearSelection2 True
+Set myDimension = Part.Parameter("D4@Croquis1")
+myDimension.SystemValue = 1.27
+Part.ClearSelection2 True
+Part.EditUndo2 1
+boolstatus = Part.Extension.SketchBoxSelect("4.813853", "-2.621752", "0.000000", "4.978924", "-2.192568", "0.000000")
+boolstatus = Part.Extension.SelectByID2("Desconocido", "MANIPULATOR", 0.6096000000000000307, 4.440216608581089019, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Line1", "SKETCHSEGMENT", 1.941623163107081496, 5.565754170167142689, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SketchBoxSelect("7.302108", "5.353703", "0.000000", "7.005395", "5.598813", "0.000000")
+boolstatus = Part.Extension.SelectByID2("Point2", "SKETCHPOINT", 3.751144459481071891, 7.043375415937775941, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Set skSegment = Part.SketchManager.CreateLine(0.609600, 4.199402, 0.000000, 0.256000, 1.805139, 0.000000)
+Part.SetPickMode
+Part.ClearSelection2 True
+Part.SetPickMode
+boolstatus = Part.Extension.SelectByID2("Point14", "SKETCHPOINT", 11.74751227716213542, 13.35218480597015933, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("D1@Croquis1@nave.SLDPRT", "DIMENSION", 15.29771689135154311, 12.14829539105724443, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("Point14", "SKETCHPOINT", 12.7040687396986236, 13.57976473824964181, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Point6", "SKETCHPOINT", 12.41393516410975906, 12.76635987699294894, 0, True, 0, Nothing, 1)
+Part.SketchAddConstraints "sgVERTICALPOINTS2D"
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Point14", "SKETCHPOINT", 12.41393516410976261, 13.57976473824964181, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Point14", "SKETCHPOINT", 12.4268034373723637, 14.8141435983236267, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Point6", "SKETCHPOINT", 12.4268034373723637, 12.77522820854490249, 0, True, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(14.5847046320221132, 13.89331595552897269, 0)
+Part.ClearSelection2 True
+Set myDimension = Part.Parameter("D1@Croquis1")
+myDimension.SystemValue = 0.8636
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Point1", "SKETCHPOINT", 0.6096000000000000307, 4.199402081688051069, 0, False, 0, Nothing, 0)
+boolstatus = Part.DeSelectByID("Point1", "SKETCHPOINT", 0.6096000000000000307, 4.199402081688051069, 0)
+Part.SetPickMode
+Part.SetPickMode
+boolstatus = Part.Extension.SelectByID2("Point1", "SKETCHPOINT", 0.6096000000000000307, 4.199402081688051069, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Point17", "SKETCHPOINT", 0.2559999999999997833, 1.805138972425561317, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Point1", "SKETCHPOINT", 0.6096000000000000307, 5.170138869829974837, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Point18", "SKETCHPOINT", 0.2560000000000000053, 0, 0, True, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(7.853591583265970399, 1.388944131675241778, 0)
+Part.ClearSelection2 True
+Set myDimension = Part.Parameter("D5@Croquis1")
+myDimension.SystemValue = 5.3086
+Part.SetPickMode
+Part.ClearSelection2 True
+Part.SetPickMode
+boolstatus = Part.Extension.SelectByID2("Line7", "SKETCHSEGMENT", 13.26895141159473823, 11.33706188270786264, 0, False, 0, Nothing, 0)
+Part.EditDelete
+Set skSegment = Part.SketchManager.CreateCenterLine(13.256064, 10.899307, 0.000000, 13.256064, 12.583899, 0.000000)
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Point18", "SKETCHPOINT", 0.2560000000000000053, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line20", "SKETCHSEGMENT", 13.29934814469194748, 12.08412054637580191, 0, True, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(22.07107724898305534, -5.772039631807718507, 0)
+Part.ClearSelection2 True
+Part.ClearSelection2 True
+Set myDimension = Part.Parameter("D6@Croquis1")
+myDimension.SystemValue = 23.7744
+boolstatus = Part.Extension.SelectByID2("Line16", "SKETCHSEGMENT", 0.2553078345295283214, 0.8353924345593850553, 0, False, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(1.432778739755610431, 0.6684376047138957944, 0)
+Part.ClearSelection2 True
+Set myDimension = Part.Parameter("D7@Croquis1")
+myDimension.SystemValue = 1.1938
+Part.SetPickMode
+Part.ClearSelection2 True
+Part.SetPickMode
+boolstatus = Part.Extension.SelectByID2("Line6", "SKETCHSEGMENT", 10.76093302444422406, 11.06059767414571482, 0, False, 0, Nothing, 0)
+Part.EditDelete
+Part.SetPickMode
+Part.SetPickMode
+boolstatus = Part.Extension.SelectByID2("Line2", "SKETCHSEGMENT", 4.931324704388478253, 7.772650140222728155, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line1", "SKETCHSEGMENT", 3.554999976727982514, 6.986178867273872939, 0, True, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(4.718987866911708018, 7.629121759489887467, 0)
+Part.ClearSelection2 True
+Set myDimension = Part.Parameter("D3@Croquis1")
+myDimension.SystemValue = 0.08726646259972
+Part.SetPickMode
+Part.ClearSelection2 True
+Part.SetPickMode
+Part.SetPickMode
+boolstatus = Part.Extension.SelectByID2("Line1", "SKETCHSEGMENT", 3.040158280649048805, 6.603041569054603599, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SketchBoxSelect("14.187106", "8.190926", "0.000000", "14.187106", "8.286199", "0.000000")
+boolstatus = Part.Extension.SelectByID2("Point6", "SKETCHPOINT", 12.14320000000000022, 10.97688432032826711, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Point6", "SKETCHPOINT", 12.14320000000000022, 10.92208683876803299, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Point1", "SKETCHPOINT", 0.6096000000000001418, 5.308600000000000207, 0, True, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(13.80601376912560241, 6.348980082600879982, 0)
+Part.ClearSelection2 True
+Set myDimension = Part.Parameter("D8@Croquis1")
+myDimension.SystemValue = 4.172204
+Part.SetPickMode
+Part.ClearSelection2 True
+Part.SetPickMode
+boolstatus = Part.Extension.SelectByID2("Point7", "SKETCHPOINT", 4.358870501736945791, 4.611172356791252369, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Line5", "SKETCHSEGMENT", 4.317886002566947212, 6.197717842086034601, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("Point15", "SKETCHPOINT", 0, 6.352733497849524902, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Point1", "SKETCHPOINT", 0.6096000000000001418, 5.308600000000000207, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Point15", "SKETCHPOINT", 0, 6.39635097528889851, 0, True, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(-2.047558426897982287, 5.56813749946441483, 0)
+Part.ClearSelection2 True
+Set myDimension = Part.Parameter("D10@Croquis1")
+myDimension.SystemValue = 0.8636
+Part.SetPickMode
+Part.ClearSelection2 True
+Part.SetPickMode
+boolstatus = Part.Extension.SelectByID2("D10@Croquis1@nave.SLDPRT", "DIMENSION", -2.490735648620617582, 5.748149481694266427, 0, False, 0, Nothing, 0)
+Set myDimension = Part.Parameter("D10@Croquis1")
+myDimension.SystemValue = 1.016
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("D1@Croquis1@nave.SLDPRT", "DIMENSION", 14.19680196382421045, 10.00780143886812112, 0, False, 0, Nothing, 0)
+Set myDimension = Part.Parameter("D1@Croquis1")
+myDimension.SystemValue = 0.762
+Part.ClearSelection2 True
+Part.SetPickMode
+boolstatus = Part.Extension.SelectByID2("Line16", "SKETCHSEGMENT", 0.3412307624674930651, 0.4118821946852602167, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line14", "SKETCHSEGMENT", 0.09475119912190876903, -0.01154130078543835758, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line13", "SKETCHSEGMENT", 0.01397312816468510022, 0.1834402498009632954, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line19", "SKETCHSEGMENT", 0.5085815573716807592, 3.685815894931470105, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line12", "SKETCHSEGMENT", 3.971587992015489732, 7.591637128056460959, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line1", "SKETCHSEGMENT", 3.784546381367571044, 6.693837396946454632, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line2", "SKETCHSEGMENT", 6.004106827722864637, 7.45447328024798761, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line20", "SKETCHSEGMENT", 12.1679080505004702, 10.75771501113812256, 0, True, 0, Nothing, 0)
+Part.SketchMirror
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SketchBoxSelect("-27.255509", "7.267720", "0.000000", "-24.944372", "6.791897", "0.000000")
+boolstatus = Part.Extension.SelectByID2("Point24", "SKETCHPOINT", 12.14320000000000022, 12.58389925045430324, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Part.SketchManager.InsertSketch True
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01056702280705592092, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.03202594452688631299
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01408936374274122848, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01761170467842653603, -0.06405188905377262598
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01408936374274122848, -0.03202594452688631299
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02113404561411184185, -0.05604540292205104773
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01761170467842653603, -0.08006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01056702280705592092, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01056702280705592092, -0.03202594452688631299
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.03170106842116776624, -0.1040843197123805242
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01056702280705592092, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.03202594452688631299
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02465638654979715114, -0.08006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01056702280705592092, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01408936374274122848, -0.03202594452688631299
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01056702280705592092, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01056702280705592092, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02817872748548245695, -0.03202594452688631299
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01408936374274122848, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02817872748548245695, -0.04003243065860789124
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01056702280705592092, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01408936374274122848, -0.03202594452688631299
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01408936374274122848, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01761170467842653603, -0.03202594452688631299
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01056702280705592092, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01408936374274122848, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01056702280705592092, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01408936374274122848, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0.03202594452688631299
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01056702280705592092, 0.03202594452688631299
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01056702280705592092, 0.03202594452688631299
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01408936374274122848, 0.03202594452688631299
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01761170467842653603, 0.04803891679032946949
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, 0.06405188905377262598
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01056702280705592092, 0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01056702280705592092, 0.05604540292205104773
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, 0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01408936374274122848, 0.05604540292205104773
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, 0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, 0.07205837518549421117
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.003522340935685307119, 0.04003243065860789124
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.01056702280705592092, 0.128103778107545252
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.007044681871370614239, 0.04003243065860789124
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.007044681871370614239, 0.05604540292205104773
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.007044681871370614239, 0.04803891679032946949
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.01056702280705592092, 0.05604540292205104773
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.007044681871370614239, 0.06405188905377262598
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.03522340935685307206, 0.1761426948978747076
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.007044681871370614239, 0.04803891679032946949
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.01761170467842653603, 0.1361102642392668371
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.007044681871370614239, 0.04803891679032946949
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.007044681871370614239, 0.04003243065860789124
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.02113404561411184185, 0.1040843197123805242
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.01056702280705592092, 0.04003243065860789124
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.03522340935685307206, 0.128103778107545252
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.01056702280705592092, 0.04803891679032946949
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.007044681871370614239, 0.04803891679032946949
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.03170106842116776624, 0.1441167503709884223
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.007044681871370614239, 0.04003243065860789124
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.007044681871370614239, 0.05604540292205104773
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.02113404561411184185, 0.1681362087661531501
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.003522340935685307119, 0.05604540292205104773
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.003522340935685307119, 0.05604540292205104773
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.03202594452688631299
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.1120908058441020955
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0.04803891679032946949
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0.04003243065860789124
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02113404561411184185, 0.1200972919758236668
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, 0.03202594452688631299
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02465638654979715114, 0.08006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, 0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02113404561411184185, 0.08006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01761170467842653603, 0.07205837518549421117
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, 0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, 0.03202594452688631299
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01761170467842653603, 0.05604540292205104773
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01408936374274122848, 0.04803891679032946949
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01761170467842653603, 0.04003243065860789124
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01056702280705592092, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01761170467842653603, 0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01056702280705592092, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02113404561411184185, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, 0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01056702280705592092, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.03522340935685307206, 0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01761170467842653603, 0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01056702280705592092, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.03170106842116776624, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01408936374274122848, 0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02465638654979715114, 0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01056702280705592092, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02113404561411184185, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02113404561411184185, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02113404561411184185, 0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01056702280705592092, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02113404561411184185, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01056702280705592092, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01408936374274122848, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02113404561411184185, 0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02113404561411184185, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01761170467842653603, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01056702280705592092, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.02113404561411184185, -0.04803891679032946949
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, -0.03202594452688631299
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01761170467842653603, -0.04803891679032946949
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, -0.04803891679032946949
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.03202594452688631299
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.09607783358065893897
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.06405188905377262598
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, -0.03202594452688631299
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01056702280705592092, -0.04803891679032946949
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.04803891679032946949
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01056702280705592092, -0.04003243065860789124
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, -0.03202594452688631299
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.03202594452688631299
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, -0.06405188905377262598
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.03202594452688631299
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, -0.05604540292205104773
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, -0.06405188905377262598
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.03202594452688631299
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, -0.04803891679032946949
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.03202594452688631299
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.03202594452688631299
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.04003243065860789124
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.03202594452688631299
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.03202594452688631299
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.03202594452688631299
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.07205837518549421117
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.007044681871370614239, -0.05604540292205104773
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.06405188905377262598
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.04803891679032946949
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.003522340935685307119, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.03202594452688631299
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01056702280705592092, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01408936374274122848, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01056702280705592092, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01056702280705592092, -0.04803891679032946949
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01056702280705592092, -0.04003243065860789124
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.06405188905377262598
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01056702280705592092, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01408936374274122848, 0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, 0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, 0.04003243065860789124
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, 0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, 0.03202594452688631299
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, 0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, 0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.003522340935685307119, -0.04003243065860789124
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.007044681871370614239, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.003522340935685307119, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.003522340935685307119, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.01056702280705592092, -0.04003243065860789124
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.007044681871370614239, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.03202594452688631299
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.06405188905377262598
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0.03202594452688631299
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01056702280705592092, 0.03202594452688631299
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, 0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, 0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, 0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.003522340935685307119, 0.06405188905377262598
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.003522340935685307119, 0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.01056702280705592092, 0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.003522340935685307119, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.01761170467842653603, 0.03202594452688631299
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.01408936374274122848, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.003522340935685307119, 0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.01408936374274122848, 0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.01056702280705592092, 0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.007044681871370614239, 0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.007044681871370614239, 0.0160129722634431565
+
+' Roll View
+Set swModelView = Part.ActiveView
+swModelView.RollBy 0
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "nave - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("SketchHatch1", "SKETCHHATCH", -2.889449924093208111, -0.9673161354103658738, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("SketchHatch2", "SKETCHHATCH", -2.140773351178911099, -1.266786764576091073, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0.09167328819880865565, 0.2419580022057536139, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SketchBoxSelect("9.638405", "-1.117051", "0.000000", "-10.026833", "-1.466434", "0.000000")
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.Extension.SelectByID2("Hoja1", "SHEET", 0.1131353499556852493, 0.04480650467165492312, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("D5@Croquis3@nave.SLDDRW", "DIMENSION", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("D4@Croquis3@nave.SLDDRW", "DIMENSION", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("D3@Croquis3@nave.SLDDRW", "DIMENSION", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("D2@Croquis3@nave.SLDDRW", "DIMENSION", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("D1@Croquis3@nave.SLDDRW", "DIMENSION", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("RD2@Vista de dibujo1", "DIMENSION", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("RD1@Vista de dibujo1", "DIMENSION", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SketchBoxSelect("11.313535", "4.480650", "0.000000", "-7.952409", "26.940948", "0.000000")
+Part.EditDelete
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("SketchHatch4", "SKETCHHATCH", -0.4437731192398145508, 4.023861017351618941, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("SketchHatch5", "SKETCHHATCH", 1.402962427282119728, 3.075537358326838167, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("SketchHatch6", "SKETCHHATCH", 7.74175741128984285, 1.528272440970599, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("SketchHatch3", "SKETCHHATCH", -8.279921249076144463, 4.17359633193450108, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("Line23", "SKETCHSEGMENT", 0.05124475326143657083, 0.04281003381055015211, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("Line15", "SKETCHSEGMENT", 0.0462535761086745878, 0.07076062586601727933, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("Line22", "SKETCHSEGMENT", 0.01630651319210257855, 0.1027041596436940596, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0.004788949677705128805, 0.0654463686514464571, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0.005765952611758953794, 0.06601628702964451589, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0.0538581940770271328, 0.1493021361658083412, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line17", "SKETCHSEGMENT", 0.05289707710488317227, 0.1449771097911602691, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0.02502468491270676276, 0.1199880685154158799, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SketchBoxSelect("-2.558589", "5.547809", "0.000000", "12.723171", "-5.120590", "0.000000")
+Part.EditDelete
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.Extension.SketchBoxSelect("13.231417", "28.530019", "0.000000", "-1.369872", "-3.855779", "0.000000")
+Part.EditDelete
+Dim myView As Object
+Set myView = Part.DropDrawingViewFromPalette2("Vista de dibujo1", 0.112938054354719819, 0.1019190694391083896, 0)
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0.1298132896153318949, 0.1503542765688435923, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.DrawingViewRotate(1.570796326794900111)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0.02194204356528600686, 0.1223688117917090534, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0.03669801590232057986, 0.09234804048532835319, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SketchBoxSelect("-0.957103", "7.624004", "0.000000", "2.502918", "5.588697", "0.000000")
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0.04382158875468211701, 0.1081216660869860069, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SketchBoxSelect("0.620260", "6.911647", "0.000000", "4.436459", "5.995759", "0.000000")
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0.0351715360053860282, 0.1640925956412551123, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0.02652148325608982837, 0.165110248905878193, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SketchBoxSelect("6.319118", "8.641657", "0.000000", "10.796792", "8.183713", "0.000000")
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0.05094516160704365415, 0.1244041183209552148, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SketchBoxSelect("2.248505", "6.199289", "0.000000", "8.201776", "5.486932", "0.000000")
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0.06010404098865129718, 0.1549337162596474415, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SketchBoxSelect("5.301465", "5.283401", "0.000000", "8.761486", "5.028988", "0.000000")
+Part.SetPickMode
+boolstatus = Part.ActivateSheet("Hoja1")
+Part.EditUndo2 1
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0.118619103704478035, 0.1813927011398473732, 0, False, 0, Nothing, 0)
+Part.EditDelete
+Set myView = Part.DropDrawingViewFromPalette2("Vista de dibujo1", 0.1069160911613127318, 0.1427218770841705564, 0)
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.DrawingViewRotate(1.570796326794900111)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0.1201455836014126977, 0.1325453444379398049, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vista de dibujo1")
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0.06875409373794738599, 0.1473013167749743779, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByRay(0.07536883995799736891, 0.1773220877357002123, -49499.74599999999919, 0, 0, -1, 0.001730010549859226435, 1, False, 0, 0)
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+Set skSegment = Part.SketchManager.CreateLine(0.000000, 4.359396, 0.000000, 0.000000, -3.765317, 0.000000)
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("Line1", "SKETCHSEGMENT", 0.07435118669337437147, 0.1432307037164820829, 0, False, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(0.06527487473893012204, 0.01128733708417029025, 0)
+Part.ClearSelection2 True
+Set myDimension = Part.Parameter("D1@Croquis14")
+myDimension.SystemValue = 5
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+Set skSegment = Part.SketchManager.CreateLine(11.604736, -0.640604, 0.000000, -11.604736, -0.640604, 0.000000)
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+Part.SetPickMode
+Part.SetPickMode
+boolstatus = Part.ActivateView("Vista de dibujo1")
+Set skSegment = Part.SketchManager.CreateLine(11.604736, -0.640604, 0.000000, 11.533600, 0.187192, 0.000000)
+Set skSegment = Part.SketchManager.CreateLine(11.533600, 0.187192, 0.000000, 7.784329, 1.796138, 0.000000)
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+Part.SetPickMode
+Part.EditUndo2 1
+Part.ClearSelection2 True
+Part.EditUndo2 1
+Part.EditUndo2 1
+Part.EditUndo2 1
+Part.EditUndo2 1
+Part.EditUndo2 1
+boolstatus = Part.ActivateView("Vista de dibujo1")
+Set skSegment = Part.SketchManager.CreateLine(0.000000, 5.121396, 0.000000, 0.000000, -2.472998, 0.000000)
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("Line1", "SKETCHSEGMENT", 0.04888601585433177688, 0.1418742086007331316, 0, False, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(0.06954042967887408278, 0.173650229869259709, 0)
+Part.ClearSelection2 True
+Set myDimension = Part.Parameter("D1@Croquis14")
+myDimension.SystemValue = 5
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+Part.SetPickMode
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+Set skSegment = Part.SketchManager.CreateLine(11.539254, 0.121396, 0.000000, -11.539254, 0.121396, 0.000000)
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByRay(0.06629603595651460679, 0.02734622650620828488, -49499.74599999999919, 0, 0, -1, 0.000197916587645109894, 3, False, 0, 0)
+boolstatus = Part.Extension.SelectByID2("Point5", "SKETCHPOINT", -11.53925409390492618, 0.1213955524465497593, 0, True, 0, Nothing, 0)
+boolstatus = Part.DeSelectByID("Point5", "SKETCHPOINT", -11.53925409390492618, 0.1213955524465497593, 0)
+boolstatus = Part.DeSelectByID("", "VERTEX", 0.06629603595651460679, 0.02734622650620828488, -49499.74599999999919)
+boolstatus = Part.Extension.SelectByRay(0.06629603595651460679, 0.02734622650620828488, -49499.74599999999919, 0, 0, -1, 0.000197916587645109894, 3, False, 0, 0)
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+Part.ClearSelection2 True
+Set skSegment = Part.SketchManager.CreateLine(-11.539254, 0.121396, 0.000000, -11.533600, 0.187192, 0.000000)
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+Part.SetPickMode
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("Line2", "SKETCHSEGMENT", 0.06705686600336774328, 0.03450726512124964451, 0, False, 0, Nothing, 0)
+Part.EditDelete
+Set skSegment = Part.SketchManager.CreateLine(12.143200, 0.121396, 0.000000, -12.143200, 0.121396, 0.000000)
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+Set skSegment = Part.SketchManager.CreateLine(-12.143200, 0.121396, 0.000000, -12.143200, 1.203192, 0.000000)
+Set skSegment = Part.SketchManager.CreateLine(-12.143200, 1.203192, 0.000000, 0.000000, 5.121396, 0.000000)
+Set skSegment = Part.SketchManager.CreateLine(0.000000, 5.121396, 0.000000, 12.143200, 1.203192, 0.000000)
+Set skSegment = Part.SketchManager.CreateLine(12.143200, 1.203192, 0.000000, 12.143200, 0.121396, 0.000000)
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0.05411713958022040805, 0.120180028047437687, 0, False, 0, Nothing, 0)
+Dim myHatch As Object
+Set myHatch = Part.SketchManager.CreateRegionHatch(0.03646250510303900016, 0.1521492310231224998, 500, 0, 1, 0, "Acero", "")
+Set myHatch = Part.SketchManager.CreateRegionHatch(0.0550714441465545157, 0.09584526160940884387, 500, 0, 1, 0, "Acero", "")
+boolstatus = Part.Extension.SelectByID2("SketchHatch1", "SKETCHHATCH", 1.311788856846645368, 1.535073064951316013, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("SketchHatch2", "SKETCHHATCH", -4.076420825351435795, 2.394063014287265645, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("SketchHatch1", "SKETCHHATCH", 0.7391288906226983757, 2.159793028104719959, 0, True, 0, Nothing, 1)
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByRay(0.1201489883568713779, 0.2644913231502694084, -49499.74599999999919, 0, 0, -1, 0.001499513646533704456, 3, False, 0, 0)
+boolstatus = Part.Extension.SelectByRay(0.1025076513388277766, 0.02192293915217015388, -49499.74599999999919, 0, 0, -1, 0.001499513646533704456, 1, True, 0, 0)
+Set myDisplayDim = Part.AddDimension2(0.1354618915811708346, 0.1467353989004833714, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.Extension.SelectByRay(0.116620720953262702, 0.2614040891721117754, -49499.74599999999919, 0, 0, -1, 0.001499513646533704456, 1, False, 0, 0)
+boolstatus = Part.Extension.SelectByRay(0.1122103866987517184, 0.02412810627942559016, -49499.74599999999919, 0, 0, -1, 0.001499513646533704456, 1, True, 0, 0)
+Set myDisplayDim = Part.AddDimension2(0.1250003560368333488, 0.1467353989004833714, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("Line7", "SKETCHSEGMENT", 0.05838100884948352332, 0.0211427089445883204, -49499.74599999999919, False, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(0.03908445166320001496, 0.01649463347164935312, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("Line1", "SKETCHSEGMENT", 0.06407379182309574928, 0.1431238588410211621, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line7", "SKETCHSEGMENT", 0.06162041909138471496, 0.02150666736626245801, -49499.74599999999919, True, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(0.1159451010078432209, 0.0649664132450841203, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.ActivateSheet("Hoja1")
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.ActivateView("Vista de dibujo1")
+Set skSegment = Part.SketchManager.CreateLine(11.773988, -2.003547, 0.000000, -11.773988, -2.610172, 0.000000)
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+Part.EditUndo2 1
+boolstatus = Part.ActivateView("Vista de dibujo1")
+Set skSegment = Part.SketchManager.CreateLine(11.766141, -2.518861, 0.000000, -11.766141, -2.518861, 0.000000)
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("Line14", "SKETCHSEGMENT", 0.09377083080567755191, 0.09654323437621614712, 0, False, 0, Nothing, 0)
+Part.SketchAddConstraints "sgVERTICAL2D"
+Part.SketchConstraintsDel 0, "sgHORIZONTAL2D"
+Part.ClearSelection2 True
+Part.EditUndo2 1
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("Line14", "SKETCHSEGMENT", 0.09444474210659908886, 0.1285540211699899016, 0, False, 0, Nothing, 0)
+Part.SketchConstraintsDel 1, "sgVERTICAL2D"
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("Line14", "SKETCHSEGMENT", 0.09343387515521678344, 0.03285861643912943442, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByRay(0.1191290007806308227, 0.0237428927430242756, -49499.74599999999919, 0, 0, -1, 0.0003688683846456897088, 3, True, 0, 0)
+Set myDisplayDim = Part.AddDimension2(0.1089308748521911618, 0.03404950971848519359, 0)
+Part.ClearSelection2 True
+Set myDimension = Part.Parameter("D4@Croquis14")
+myDimension.SystemValue = 2
+boolstatus = Part.ActivateSheet("Hoja1")
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("D4@Croquis14@nave.SLDDRW", "DIMENSION", 0.1101242725672213346, 0.03567687023898088311, 0, False, 0, Nothing, 0)
+Set myDimension = Part.Parameter("D4@Croquis14")
+myDimension.SystemValue = 2.43
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+Part.ClearSelection2 True
+Set skSegment = Part.SketchManager.CreateLine(-11.780969, -2.691408, 0.000000, -11.539254, 0.121396, 0.000000)
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+Set skSegment = Part.SketchManager.CreateLine(11.766141, -2.691408, 0.000000, 11.539254, 0.121396, 0.000000)
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("D4@Croquis14@nave.SLDDRW", "DIMENSION", 0.1097924229284339553, 0.03564285100560700414, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("D4@Croquis14@nave.SLDDRW", "DIMENSION", 0.1121707577992438892, 0.02869079522939330107, 0, False, 0, Nothing, 0)
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("D1@Croquis14@nave.SLDDRW", "DIMENSION", 3.521947643629520286, 1.522208906580162058, 0, False, 0, Nothing, 0)
+Set myDimension = Part.Parameter("D1@Croquis14")
+myDimension.SystemValue = 5.5
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByRay(0.06696117405843696191, 0.2579356112869913287, -49499.74599999999919, 0, 0, -1, 0.0007576627934885323511, 3, False, 0, 0)
+boolstatus = Part.Extension.SelectByID2("Line5", "SKETCHSEGMENT", 0.07230938201247369412, 0.2494676157054214471, 0, True, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(0.08790832187841404743, 0.2516960356862700809, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+Part.ClearSelection2 True
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("D5@Croquis14@nave.SLDDRW", "DIMENSION", 0.08204757732878212306, 0.2531667928736301976, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0.11600869783691517, 0.221879776342515489, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0.1177181529614196309, 0.2127609678585960507, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0.1046318417158466074, 0.2318358520044753179, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line16", "SKETCHSEGMENT", 0.07753512521439417937, 0.258942219078179825, -49499.74599999999919, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0.1066087639367812173, 0.2361274890375171243, 0, False, 0, Nothing, 0)
+Set myHatch = Part.SketchManager.CreateRegionHatch(0.08409688395382181048, 0.2422854472426252959, 500, 0, 1, 0, "Acero", "")
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Line5", "SKETCHSEGMENT", 0.07220854657501646345, 0.2485103546337143476, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line14", "SKETCHSEGMENT", 0.09496797328203671062, 0.2505561457983903062, 0, True, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(0.1077541680612615904, 0.2449302200955313646, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+Part.SetPickMode
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("D3@Croquis14@nave.SLDDRW", "DIMENSION", 0.1225806478629152818, 0.1299699355047320426, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.Extension.SelectByID2("Hoja1", "SHEET", 0.192346999894459858, 0.1208086973591756819, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByRay(0.05717867004125515296, 0.235948817650530801, -49499.74599999999919, 0, 0, -1, 0.001691515020717265566, 1, False, 0, 0)
+
+Dim myNote As Object
+Dim myAnnotation As Object
+Dim myTextFormat As Object
+Set myNote = Part.InsertNote("malla de nailon")
+If Not myNote Is Nothing Then
+   myNote.LockPosition = False
+   myNote.Angle = 0
+   boolstatus = myNote.SetBalloon(0, 0)
+   Set myAnnotation = myNote.GetAnnotation()
+   If Not myAnnotation Is Nothing Then
+      longstatus = myAnnotation.SetLeader3(swLeaderStyle_e.swUNDERLINED, 0, True, False, False, False)
+      boolstatus = myAnnotation.SetPosition(0.01887082986618765501, 0.2484302202035647555, 0.002539999999998017368)
+      boolstatus = myAnnotation.SetTextFormat(0, True, myTextFormat)
+   End If
+End If
+Part.ClearSelection2 True
+Part.WindowRedraw
+
+Set myNote = Part.InsertNote("malla de nailon")
+If Not myNote Is Nothing Then
+   myNote.LockPosition = False
+   myNote.Angle = 0
+   boolstatus = myNote.SetBalloon(0, 0)
+   Set myAnnotation = myNote.GetAnnotation()
+   If Not myAnnotation Is Nothing Then
+      longstatus = myAnnotation.SetLeader3(swLeaderStyle_e.swNO_LEADER, 0, True, False, False, False)
+      boolstatus = myAnnotation.SetPosition(0.08752643953059413562, 0.2205261810425866997, 0)
+      boolstatus = myAnnotation.SetTextFormat(0, True, myTextFormat)
+   End If
+End If
+Part.ClearSelection2 True
+Part.WindowRedraw
+boolstatus = Part.Extension.SelectByID2("Line14", "SKETCHSEGMENT", 0.09250148370917454788, 0.2070935617604205692, 0, False, 0, Nothing, 0)
+
+Set myNote = Part.InsertNote("Cortinas")
+If Not myNote Is Nothing Then
+   myNote.LockPosition = False
+   myNote.Angle = 0
+   boolstatus = myNote.SetBalloon(0, 0)
+   Set myAnnotation = myNote.GetAnnotation()
+   If Not myAnnotation Is Nothing Then
+      longstatus = myAnnotation.SetLeader3(swLeaderStyle_e.swUNDERLINED, 0, True, False, False, False)
+      boolstatus = myAnnotation.SetPosition(0.1354618915811708346, 0.2419188710104819284, 0)
+      boolstatus = myAnnotation.SetTextFormat(0, True, myTextFormat)
+   End If
+End If
+Part.ClearSelection2 True
+Part.WindowRedraw
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+Part.SetPickMode
+boolstatus = Part.ActivateSheet("Hoja1")
+Part.SetPickMode
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("Elemento de detalle2@Vista de dibujo1", "NOTE", 0.09961543919378271217, 0.2182007920894739883, 0, False, 0, Nothing, 0)
+Part.EditDelete
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "nave.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' New Document
+Dim swSheetWidth As Double
+swSheetWidth = 0
+Dim swSheetHeight As Double
+swSheetHeight = 0
+Set Part = swApp.NewDocument("C:\ProgramData\SolidWorks\SOLIDWORKS 2023\templates\Pieza.prtdot", 0, swSheetWidth, swSheetHeight)
+Dim swPart As PartDoc
+Set swPart = Part
+swApp.ActivateDoc2 "Pieza1", False, longstatus
+Set Part = swApp.ActiveDoc
+
+' Named View
+Part.ShowNamedView2 "*Isométrica", 7
+Part.ViewZoomtofit2
+boolstatus = Part.Extension.SelectByID2("Alzado", "PLANE", 0, 0, 0, False, 0, Nothing, 0)
+Part.ActivateSelectedFeature
+Part.SketchManager.InsertSketch True
+Part.SketchManager.InsertSketch True
+boolstatus = Part.Extension.SelectByID2("Alzado", "PLANE", -0.08546356778877978178, 0.04015254082082966858, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SetUserPreferenceToggle(swUserPreferenceToggle_e.swSketchAddConstToRectEntity, swUserPreferenceOption_e.swDetailingNoOptionSpecified, True)
+boolstatus = Part.Extension.SetUserPreferenceToggle(swUserPreferenceToggle_e.swSketchAddConstLineDiagonalType, swUserPreferenceOption_e.swDetailingNoOptionSpecified, True)
+Dim vSkLines As Variant
+vSkLines = Part.SketchManager.CreateCenterRectangle(0, 0, 0, 0.03443882001523121406, -0.01638064218489507229, 0)
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.EditRebuild3()
+boolstatus = Part.Extension.SelectByID2("Croquis1", "SKETCH", 0, 0, 0, False, 0, Nothing, 0)
+Part.EditSketch
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Line3", "SKETCHSEGMENT", -0.01432059819076154927, -0.01611544649733698958, 0, False, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(-0.01325132685918468944, -0.02039253182364443584, 0)
+Part.ClearSelection2 True
+Set myDimension = Part.Parameter("D1@Croquis1")
+myDimension.SystemValue = 38
+boolstatus = Part.Extension.SelectByID2("Line2", "SKETCHSEGMENT", -18.75061598420719733, 1.797032553341420424, 0, False, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(-20.9732615107084257, 1.371419580181612474, 0)
+Part.ClearSelection2 True
+Set myDimension = Part.Parameter("D2@Croquis1")
+myDimension.SystemValue = 5.5
+Part.SetPickMode
+Part.ClearSelection2 True
+
+' Named View
+Part.ShowNamedView2 "*Trimétrica", 8
+Part.ViewZoomtofit2
+Dim myFeature As Object
+Set myFeature = Part.FeatureManager.FeatureExtrusion2(True, False, False, 0, 0, 0.001000000000000000021, 0.01000000000000000021, False, False, False, False, 0.01745329251994333364, 0.01745329251994333364, False, False, False, False, True, True, True, 0, 0, False)
+Part.SelectionManager.EnableContourSelection = False
+Part.ClearSelection2 True
+
+' Save As
+longstatus = Part.SaveAs3("C:\Users\USER\Desktop\project\Proyectos en Solidwork\nave\malla_de_nailon.SLDPRT", 0, 0)
+
+' New Document
+swSheetWidth = 0.2158999999999999808
+swSheetHeight = 0.2793999999999999817
+Set Part = swApp.NewDocument("C:\ProgramData\SolidWorks\SOLIDWORKS 2023\templates\Dibujo.drwdot", 12, swSheetWidth, swSheetHeight)
+Dim swDrawing As DrawingDoc
+Set swDrawing = Part
+Set swDrawing = Part
+Dim swSheet As sheet
+Set swSheet = swDrawing.GetCurrentSheet()
+swSheet.SetProperties2 12, 12, 1, 1, False, swSheetWidth, swSheetHeight, True
+swSheet.SetTemplateName "C:\ProgramData\SolidWorks\SOLIDWORKS 2023\lang\spanish\sheetformat\a - portrait.slddrt"
+swSheet.ReloadTemplate True
+boolstatus = Part.GenerateViewPaletteViews("C:\Users\USER\Desktop\project\Proyectos en Solidwork\nave\malla_de_nailon.SLDPRT")
+Set myView = Part.DropDrawingViewFromPalette2("Vista de dibujo1", 0.09338038876404491928, 0.164676476404494343, 0)
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Part.SetPickMode
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "nave - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "malla_de_nailon.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "malla_de_nailon - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByRay(0.1093909505617977063, 0.1531488715644556964, -49499.99950000000536, 0, 0, -1, 0.001088718202247190804, 2, False, 0, 0)
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.DrawingViewRotate(1.570796326794900111)
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+Part.SetPickMode
+Part.SetPickMode
+Part.SetPickMode
+boolstatus = Part.Extension.SketchBoxSelect("-21.043321", "12.310025", "0.000000", "-21.242518", "12.310025", "0.000000")
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "malla_de_nailon.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "nave - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Save
+Dim swErrors As Long
+Dim swWarnings As Long
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+
+' Save As
+longstatus = Part.SaveAs3("C:\Users\USER\Desktop\project\Proyectos en Solidwork\nave\navemodificada21_02.pdf", 0, 2)
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "malla_de_nailon - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByRay(0.09832214472629219326, 0.1981311213154668405, -49499.99950000000536, 0, 0, -1, 0.002257566064179774255, 2, False, 0, 0)
+Part.EditCopy
+' MSGBOX
+' Algunos de los elementos seleccionados no se pueden copiar.
+' ¿Desea continuar con la operación de copiar?
+
+Part.Paste
+Part.Paste
+boolstatus = Part.ActivateView("Vista de dibujo2")
+boolstatus = Part.Extension.SelectByRay(0.1487853861608988693, 0.2107469316741185095, -49499.99950000000536, 0, 0, -1, 0.002257566064179774255, 2, False, 0, 0)
+boolstatus = Part.Extension.SketchBoxSelect("7.503087", "0.265596", "0.000000", "8.034279", "0.331995", "0.000000")
+boolstatus = Part.ActivateView("Vista de dibujo3")
+boolstatus = Part.Extension.SelectByRay(0.02727521270651689367, 0.1483318698997365404, -49499.99950000000536, 0, 0, -1, 0.002257566064179774255, 2, False, 0, 0)
+boolstatus = Part.Extension.SelectByRay(0.02298485215019219208, 0.1529942362247951604, -49499.99950000000536, 0, 0, -1, 0.0006489962968761434515, 2, False, 0, 0)
+boolstatus = Part.Extension.SketchBoxSelect("-0.264152", "0.960228", "0.000000", "-0.493210", "2.029163", "0.000000")
+boolstatus = Part.Extension.SelectByRay(0.03271979660333435014, 0.1457407482008853394, -49499.99950000000536, 0, 0, -1, 0.0006489962968761434515, 2, False, 0, 0)
+boolstatus = Part.Extension.SketchBoxSelect("-0.989501", "-0.013266", "0.000000", "-1.142206", "0.521201", "0.000000")
+boolstatus = Part.Extension.SelectByRay(0.03195627154818594939, 0.1451681044095240181, -49499.99950000000536, 0, 0, -1, 0.0006489962968761434515, 2, False, 0, 0)
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.ActivateView("Vista de dibujo3")
+boolstatus = Part.Extension.SelectByRay(0.0264207148983600093, 0.1514671861144983589, -49499.99950000000536, 0, 0, -1, 0.0006489962968761434515, 2, False, 0, 0)
+boolstatus = Part.Extension.SelectByRay(0.0264207148983600093, 0.1514671861144983589, -49499.99950000000536, 0, 0, -1, 0.0006489962968761434515, 2, False, 0, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+Part.SetPickMode
+Part.SetPickMode
+boolstatus = Part.ActivateView("Vista de dibujo3")
+boolstatus = Part.Extension.SelectByRay(0.03157450902061173514, 0.1541395238075177754, -49499.99950000000536, 0, 0, -1, 0.0006489962968761434515, 2, False, 0, 0)
+boolstatus = Part.Extension.SketchBoxSelect("-0.149624", "0.101262", "0.000000", "-0.206888", "0.673906", "0.000000")
+boolstatus = Part.Extension.SelectByRay(0.02680247742593422355, 0.1537577612799435889, -49499.99950000000536, 0, 0, -1, 0.0006489962968761434515, 2, False, 0, 0)
+boolstatus = Part.Extension.SelectByRay(0.02947481511895364004, 0.1491766109490531567, -49499.99950000000536, 0, 0, -1, 0.0006489962968761434515, 2, False, 0, 0)
+boolstatus = Part.Extension.SketchBoxSelect("-0.645915", "0.311232", "0.000000", "-0.932237", "1.742841", "0.000000")
+boolstatus = Part.Extension.SelectByRay(0.04188209726511518682, 0.1470769170473950338, -49499.99950000000536, 0, 0, -1, 0.0006489962968761434515, 2, False, 0, 0)
+boolstatus = Part.Extension.SketchBoxSelect("-0.855884", "-0.929496", "0.000000", "-0.798620", "-1.960255", "0.000000")
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByRay(0.07757689359330308121, 0.1472677983111821409, -49499.99950000000536, 0, 0, -1, 0.0006489962968761434515, 2, False, 0, 0)
+boolstatus = Part.Extension.SketchBoxSelect("-1.740868", "1.580350", "0.000000", "1.790436", "1.847583", "0.000000")
+boolstatus = Part.ActivateView("Vista de dibujo3")
+boolstatus = Part.Extension.SelectByID2("Point1@Origen@malla_de_nailon-14@Vista de dibujo3", "EXTSKETCHPOINT", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SketchBoxSelect("-0.111447", "0.101262", "0.000000", "-2.993754", "5.255057", "0.000000")
+boolstatus = Part.Extension.SelectByRay(0.0308109839654633344, 0.1455498669370982323, -49499.99950000000536, 0, 0, -1, 0.0006489962968761434515, 2, False, 0, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.Extension.SketchBoxSelect("-10.187516", "15.731884", "0.000000", "-10.039087", "15.632931", "0.000000")
+boolstatus = Part.ActivateView("Vista de dibujo3")
+boolstatus = Part.Extension.SelectByRay(0.02626877341238548214, 0.3463187801883710337, -49499.99950000000536, 0, 0, -1, 0.001682198401502963672, 1, False, 0, 0)
+boolstatus = Part.Extension.SelectByRay(0.03220594424121941968, 0.3250439180517158966, -49499.99950000000536, 0, 0, -1, 0.001682198401502963672, 2, False, 0, 0)
+boolstatus = Part.Extension.SketchBoxSelect("16.940816", "0.038119", "0.000000", "16.248146", "6.569007", "0.000000")
+Part.ClearSelection2 True
+Part.SetPickMode
+boolstatus = Part.ActivateSheet("Hoja1")
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "malla_de_nailon.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+boolstatus = Part.Extension.SelectByID2("Saliente-Extruir1", "BODYFEATURE", 0, 0, 0, False, 0, Nothing, 0)
+Part.FeatEdit
+Part.ClearSelection2 True
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "malla_de_nailon - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+' MSGBOX
+' Uno de los modelos de este dibujo está en estado de retroceder. El dibujo es inaccesible ahora.
+
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "nave - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "nave.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+boolstatus = Part.Extension.SelectByID2("Extruir-Lámina1", "BODYFEATURE", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Extruir-Lámina1", "BODYFEATURE", 0, 0, 0, False, 0, Nothing, 0)
+Part.FeatEdit
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Desconocido", "MANIPULATOR", 11.86042951829081105, 11.79995006691623516, 0, False, 0, Nothing, 0)
+Part.EditDelete
+Part.SketchManager.SketchConstraintsDel 1, "sgSYMMETRIC"
+boolstatus = Part.Extension.SelectByID2("Desconocido", "MANIPULATOR", 11.75270743002064222, 11.58450589037589751, 0, False, 0, Nothing, 0)
+Part.EditDelete
+Part.SketchManager.SketchConstraintsDel 1, "sgSYMMETRIC"
+boolstatus = Part.Extension.SelectByID2("Desconocido", "MANIPULATOR", 11.75270743002064222, 11.36906171383556163, 0, False, 0, Nothing, 0)
+Part.EditDelete
+Part.SketchManager.SketchConstraintsDel 1, "sgSYMMETRIC"
+boolstatus = Part.Extension.SelectByID2("Desconocido", "MANIPULATOR", 11.75270743002064222, 11.15361753729522398, 0, False, 0, Nothing, 0)
+Part.EditDelete
+Part.SketchManager.SketchConstraintsDel 1, "sgSYMMETRIC"
+boolstatus = Part.Extension.SelectByID2("Desconocido", "MANIPULATOR", 11.69884638588555603, 11.09975649316013957, 0, False, 0, Nothing, 0)
+Part.EditDelete
+Part.SketchManager.SketchConstraintsDel 1, "sgSYMMETRIC"
+boolstatus = Part.Extension.SelectByID2("Desconocido", "MANIPULATOR", 11.67191586381801471, 11.15361753729522398, 0, False, 0, Nothing, 0)
+Part.EditDelete
+Part.SketchManager.SketchConstraintsDel 1, "sgSYMMETRIC"
+boolstatus = Part.Extension.SelectByID2("D6@Croquis1@nave.SLDPRT", "DIMENSION", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SketchBoxSelect("26.860730", "-0.641951", "0.000000", "15.092092", "12.096186", "0.000000")
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("D9@Croquis1@nave.SLDPRT", "DIMENSION", 0.0995689869732441224, -1.448582807655578009, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("Line16", "SKETCHSEGMENT", 0.2689527336090140608, 0.6918118089237097479, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line13", "SKETCHSEGMENT", -0.008220669976791938893, 0.6764132865022762786, 0, True, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(0.2073586439232801837, -0.8018448659553616409, 0)
+Part.ClearSelection2 True
+Set myDimension = Part.Parameter("D6@Croquis1")
+myDimension.SystemValue = 0.9652
+Part.SetPickMode
+Part.ClearSelection2 True
+Set skSegment = Part.SketchManager.CreateLine(-0.131409, 2.770612, 0.000000, 0.315148, 2.770612, 0.000000)
+Set skSegment = Part.SketchManager.CreateLine(0.315148, 2.770612, 0.000000, 0.315148, 6.666439, 0.000000)
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Point31", "SKETCHPOINT", -0.1314088493482614695, 2.770612335817261851, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Line28", "SKETCHSEGMENT", 0.2422836084572219661, 2.780135541630885498, 0, False, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(0.1879624468101397383, 2.424958715476886795, 0)
+Part.ClearSelection2 True
+Set myDimension = Part.Parameter("D9@Croquis1")
+myDimension.SystemValue = 0.2286
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Point33", "SKETCHPOINT", 0.2286000000000004417, 6.666438508439992638, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Point33", "SKETCHPOINT", 0.2286000000000004417, 6.666438508439992638, 0, True, 0, Nothing, 0)
+boolstatus = Part.DeSelectByID("Point33", "SKETCHPOINT", 0.2286000000000004417, 6.666438508439992638, 0)
+boolstatus = Part.DeSelectByID("Point33", "SKETCHPOINT", 0.2286000000000004417, 6.666438508439992638, 0)
+boolstatus = Part.Extension.SelectByID2("Point33", "SKETCHPOINT", 0.2286000000000004417, 6.666438508439992638, 0, False, 0, Nothing, 0)
+boolstatus = Part.DeSelectByID("Point33", "SKETCHPOINT", 0.2286000000000004417, 6.666438508439992638, 0)
+Part.SetPickMode
+boolstatus = Part.Extension.SelectByID2("Point33", "SKETCHPOINT", 0.2286000000000004417, 6.666438508439992638, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line12", "SKETCHSEGMENT", 0.3318230754347486489, 6.439457273132445536, 0, True, 0, Nothing, 1)
+Part.SketchAddConstraints "sgCOINCIDENT"
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SketchBoxSelect("-1.482325", "7.704719", "0.000000", "-1.482325", "7.532907", "0.000000")
+boolstatus = Part.Extension.SelectByID2("Point33", "SKETCHPOINT", 0.2286000000000001364, 6.398361564859344597, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Part.EditUndo2 1
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Line13", "SKETCHSEGMENT", -0.08792811756734053574, 1.46288409033729927, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line20", "SKETCHSEGMENT", 12.18585069187061265, 11.27224274512432345, 0, True, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(17.86368144033107797, -2.692804797897597524, 0)
+Part.ClearSelection2 True
+Part.ClearSelection2 True
+Set myDimension = Part.Parameter("D11@Croquis1")
+myDimension.SystemValue = 24.2864
+Part.SetPickMode
+Part.ClearSelection2 True
+Part.EditUndo2 1
+Part.EditUndo2 1
+boolstatus = Part.Extension.SelectByID2("Line16", "SKETCHSEGMENT", 1.086778822816263812, 0.5592633669652933293, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line20", "SKETCHSEGMENT", 12.15057565828443131, 11.79701927217352164, 0, True, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(19.45685658736717727, -2.189289934927739267, 0)
+Part.ClearSelection2 True
+Part.ClearSelection2 True
+Set myDimension = Part.Parameter("D11@Croquis1")
+myDimension.SystemValue = 23.7744
+boolstatus = Part.Extension.SelectByID2("D2@Croquis1@nave.SLDPRT", "DIMENSION", 0.4377768851494892033, 8.467474621748371177, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("D9@Croquis1@nave.SLDPRT", "DIMENSION", 0, 2.780135541630885943, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Point16", "SKETCHPOINT", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.DeSelectByID("Point16", "SKETCHPOINT", 0, 0, 0)
+Part.SetPickMode
+Part.SetPickMode
+boolstatus = Part.Extension.SelectByID2("Point31", "SKETCHPOINT", 0, 2.780135541630885943, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Point16", "SKETCHPOINT", 0, 0, 0, True, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(-0.8548860321620654901, 0.5204853455614566471, 0)
+Part.ClearSelection2 True
+Set myDimension = Part.Parameter("D2@Croquis1")
+myDimension.SystemValue = 2.0828
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("D10@Croquis1@nave.SLDPRT", "DIMENSION", -1.98301529400532317, 5.978890536438855818, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("Point33", "SKETCHPOINT", 0.2286000000000001364, 6.394291375494074003, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Point1", "SKETCHPOINT", 0.6096000000000001418, 5.308600000000000207, 0, True, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(-1.094345333077809457, 5.886959161170492116, 0)
+Part.ClearSelection2 True
+Set myDimension = Part.Parameter("D10@Croquis1")
+myDimension.SystemValue = 1.016
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Line13", "SKETCHSEGMENT", 0, 4.538632323901161669, 0, False, 2, Nothing, 0)
+boolstatus = Part.SketchManager.SketchTrim(4, 0, 0, 0)
+Part.SetPickMode
+boolstatus = Part.Extension.SelectByID2("Point15", "SKETCHPOINT", 0, 6.253646607645874766, 0, False, 0, Nothing, 0)
+Part.SetPickMode
+boolstatus = Part.Extension.SelectByID2("Line12", "SKETCHSEGMENT", 3.010022847153543069, 7.157941068047373179, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Point1", "SKETCHPOINT", 0.6096000000000001418, 5.308600000000000207, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Line19", "SKETCHSEGMENT", 1.749749121643390026, 5.024622533448832584, 0, False, 0, Nothing, 0)
+boolstatus = Part.DeSelectByID("Line19", "SKETCHSEGMENT", 1.698566686412247062, 5.034395884786488473, 0)
+boolstatus = Part.Extension.SelectByID2("Point1", "SKETCHPOINT", 1.750926312211802838, 5.308600000000000207, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Point33", "SKETCHPOINT", 0.228600000000000525, 6.324600000000000222, 0, True, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(0.5819760777760834003, 10.67513726183901035, 0)
+Part.ClearSelection2 True
+Set myDimension = Part.Parameter("D12@Croquis1")
+myDimension.SystemValue = 0.6858
+Part.ClearSelection2 True
+Part.EditUndo2 1
+boolstatus = Part.Extension.SelectByID2("D12@Croquis1@nave.SLDPRT", "DIMENSION", 0.2429451940726750081, 11.31552893105656388, 0, False, 0, Nothing, 0)
+Set myDimension = Part.Parameter("D12@Croquis1")
+myDimension.SystemValue = 1.2192
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Line2", "SKETCHSEGMENT", 9.961830526903781902, 8.56561176324001039, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line12", "SKETCHSEGMENT", 9.283768759496958012, 9.092993137889759936, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line1", "SKETCHSEGMENT", 3.1058726564570307, 6.079385282748331676, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line29", "SKETCHSEGMENT", 0.01692460493706704483, 5.06229263163810117, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line19", "SKETCHSEGMENT", 1.184697648804366565, 3.480148507688850756, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SketchBoxSelect("1.184698", "3.480149", "0.000000", "1.184698", "3.141118", "0.000000")
+boolstatus = Part.Extension.SketchBoxSelect("-1.872081", "1.658211", "0.000000", "2.149127", "-1.947522", "0.000000")
+boolstatus = Part.Extension.SelectByID2("Line13", "SKETCHSEGMENT", -0.04695706896493945237, 1.064674359444704344, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line28", "SKETCHSEGMENT", 0.05638806968213749826, 2.087554768909574143, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Line20", "SKETCHSEGMENT", 12.76849567652198658, 11.75361319245335423, 0, True, 0, Nothing, 0)
+Part.SketchMirror
+Part.ClearSelection2 True
+Part.SketchManager.InsertSketch True
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.0669244777780208383, -0.2642140423468121169
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01761170467842653603, -0.04803891679032946949
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01056702280705592092, -0.03202594452688631299
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01056702280705592092, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01761170467842653603, -0.08006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01056702280705592092, -0.03202594452688631299
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01408936374274122848, -0.03202594452688631299
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01056702280705592092, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01056702280705592092, -0.06405188905377262598
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01408936374274122848, -0.04803891679032946949
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01408936374274122848, -0.09607783358065893897
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, -0.04803891679032946949
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.03202594452688631299
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, -0.04003243065860789124
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.04003243065860789124
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.05604540292205104773
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, -0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.007044681871370614239, -0.06405188905377262598
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, -0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.003522340935685307119, 0.03202594452688631299
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.01056702280705592092, 0.07205837518549421117
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.03202594452688631299
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.04003243065860789124
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.04803891679032946949
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.03202594452688631299
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.03202594452688631299
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.03202594452688631299
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.007044681871370614239, 0.07205837518549421117
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.04003243065860789124
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.003522340935685307119, 0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.003522340935685307119, 0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.003522340935685307119, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.02401945839516473474
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.007044681871370614239, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.003522340935685307119, 0.04803891679032946949
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.007044681871370614239, 0.03202594452688631299
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.003522340935685307119, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.0160129722634431565
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.008006486131721578248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.01056702280705592092, 0.008006486131721578248
+
+' Roll View
+Set swModelView = Part.ActiveView
+swModelView.RollBy 0
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "malla_de_nailon.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Part.SketchManager.InsertSketch True
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "nave - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Part.SetPickMode
+boolstatus = Part.Extension.SelectByID2("D6@Croquis14@nave.SLDDRW", "DIMENSION", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("D5@Croquis14@nave.SLDDRW", "DIMENSION", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("D4@Croquis14@nave.SLDDRW", "DIMENSION", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("D3@Croquis14@nave.SLDDRW", "DIMENSION", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("D2@Croquis14@nave.SLDDRW", "DIMENSION", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("D1@Croquis14@nave.SLDDRW", "DIMENSION", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("RD2@Vista de dibujo1", "DIMENSION", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("RD1@Vista de dibujo1", "DIMENSION", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SketchBoxSelect("-3.715360", "30.119171", "0.000000", "17.391529", "-5.310249", "0.000000")
+Part.EditDelete
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("SketchHatch3", "SKETCHHATCH", 0.8543921382137470433, -2.023737558072105536, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("SketchHatch2", "SKETCHHATCH", -3.417240071366705934, 1.242804719842378169, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("Line5", "SKETCHSEGMENT", 0.07047478141067486934, 0.1655045724982429911, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("Line8", "SKETCHSEGMENT", 0.02231422218501277754, 0.1253009752316033287, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Hoja1")
+boolstatus = Part.Extension.SketchBoxSelect("-3.882875", "28.862809", "0.000000", "20.029890", "-2.504373", "0.000000")
+Part.EditDelete
+Set myView = Part.DropDrawingViewFromPalette2("Vista de dibujo1", 0.1039473595505617798, 0.1445031685393258214, 0)
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateView("Vista de dibujo1")
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0.09498144494382021463, 0.1457840134831460688, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.DrawingViewRotate(1.570796326794900111)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0.1501410324494382165, 0.1728995009438202279, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.SetupSheet5("Hoja1", 12, 12, 1, 90, False, "C:\ProgramData\SolidWorks\SOLIDWORKS 2023\lang\spanish\sheetformat\a - portrait.slddrt", 0.2158999999999999808, 0.2793999999999999817, "Predeterminado", False)
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0.07544215532584264139, 0.1705939800449438326, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0.07405884278651680974, 0.1300168122247191138, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vista de dibujo1")
+Set myView = Part.ActiveDrawingView
+myView.FocusLocked = TRUE
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.DrawingViewRotate(-1.570796326794900111)
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0.06207013411235950961, 0.1765883343820224827, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Set skSegment = Part.SketchManager.CreateLine(-12.623800, -3.038608, 0.000000, -12.624054, 1.203379, 0.000000)
+Set skSegment = Part.SketchManager.CreateLine(-12.624054, 1.203379, 0.000000, 0.000000, 5.121662, 0.000000)
+Set skSegment = Part.SketchManager.CreateLine(0.000000, 5.121662, 0.000000, 12.624054, 1.203379, 0.000000)
+Set skSegment = Part.SketchManager.CreateLine(12.624054, 1.203379, 0.000000, 12.623800, -3.038608, 0.000000)
+Set skSegment = Part.SketchManager.CreateLine(12.623800, -3.038608, 0.000000, -12.623800, -3.038608, 0.000000)
+Set skSegment = Part.SketchManager.CreateLine(0.000000, 5.121662, 0.000000, 0.000000, -3.038608, 0.000000)
+Part.SetPickMode
+Part.ClearSelection2 True
+Set myHatch = Part.SketchManager.CreateRegionHatch(0.1258584969713875679, 0.1731955602495263702, 500, 0, 1, 0, "Acero", "")
+Set myHatch = Part.SketchManager.CreateRegionHatch(0.1301282783700338785, 0.09740694042355613202, 500, 0, 1, 0, "Acero", "")
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Vista de dibujo1", "DRAWINGVIEW", 0.1477411266394494382, 0.1753304509453579851, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SketchBoxSelect("-3.391001", "1.517314", "0.000000", "-2.510359", "1.047638", "0.000000")
+Part.SetPickMode
+Part.ClearSelection2 True
+Part.SetPickMode
+Part.SetPickMode
+Part.EditUndo2 1
+Part.ClearSelection2 True
+Part.EditUndo2 1
+Part.ClearSelection2 True
+Part.EditUndo2 1
+Part.ClearSelection2 True
+Part.EditUndo2 1
+Part.ClearSelection2 True
+Part.EditUndo2 1
+Part.ClearSelection2 True
+Part.EditUndo2 1
+Set skSegment = Part.SketchManager.CreateLine(0.000000, 5.121396, 0.000000, 0.000000, -1.617069, 0.000000)
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Line1", "SKETCHSEGMENT", 0.1412712922280160155, 0.1433490541597571832, 0, False, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(0.1498761195963824733, 0.01766085944841652711, 0)
+Part.ClearSelection2 True
+Set myDimension = Part.Parameter("D1@Croquis18")
+myDimension.SystemValue = 5
+Part.SetPickMode
+Part.ClearSelection2 True
+Set skSegment = Part.SketchManager.CreateLine(-12.623800, 0.121396, 0.000000, 12.623800, 0.121396, 0.000000)
+Part.SetPickMode
+Part.ClearSelection2 True
+Set skSegment = Part.SketchManager.CreateLine(-12.623800, 0.121396, 0.000000, -12.624054, 1.203379, 0.000000)
+Set skSegment = Part.SketchManager.CreateLine(-12.624054, 1.203379, 0.000000, 0.000000, 5.121396, 0.000000)
+Set skSegment = Part.SketchManager.CreateLine(12.623800, 0.121396, 0.000000, 12.623800, 1.203192, 0.000000)
+Set skSegment = Part.SketchManager.CreateLine(12.623800, 1.203192, 0.000000, 0.000000, 5.121396, 0.000000)
+Part.SetPickMode
+Part.ClearSelection2 True
+Set myHatch = Part.SketchManager.CreateRegionHatch(0.1560341027208839715, 0.1285162894193603578, 500, 0, 1, 0, "Acero", "")
+Set myHatch = Part.SketchManager.CreateRegionHatch(0.151195573213718959, 0.1547249909165043236, 500, 0, 1, 0, "Acero", "")
+Set skSegment = Part.SketchManager.CreateLine(-12.624054, -2.329234, 0.000000, 12.623800, -2.329234, 0.000000)
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByRay(0.08655674285404835189, 0.03211871526035197516, -54499.74599999999919, 0, 0, -1, 0.0009123428240132266985, 1, False, 0, 0)
+boolstatus = Part.Extension.SelectByID2("Line8", "SKETCHSEGMENT", 0.1120486747014767803, 0.06002567261073801785, 0, True, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(0.0969454584073536213, 0.01766085944841655486, 0)
+Part.ClearSelection2 True
+Set myDimension = Part.Parameter("D2@Croquis18")
+myDimension.SystemValue = 2.43
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("D2@Croquis18@nave.SLDDRW", "DIMENSION", 0.09453364221080030882, 0.02145484900378097359, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("D2@Croquis18@nave.SLDDRW", "DIMENSION", 0.08513439326445848554, 0.02903095128990389184, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Hoja1", "SHEET", 0.09552410687018894619, 0.01560611163067814056, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Set skSegment = Part.SketchManager.CreateLine(-12.624054, -2.691408, 0.000000, -12.623800, 0.121396, 0.000000)
+Set skSegment = Part.SketchManager.CreateLine(12.623800, -2.691408, 0.000000, 12.623800, 0.121396, 0.000000)
+Part.SetPickMode
+Part.ClearSelection2 True
+Set myHatch = Part.SketchManager.CreateRegionHatch(0.1192712479352967536, 0.1729635623580105253, 500, 0, 1, 0, "Acero", "")
+boolstatus = Part.Extension.SelectByID2("D1@Croquis18@nave.SLDDRW", "DIMENSION", 0.1584824347057849081, 0.0201210709714217395, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByRay(0.08671330999568299669, 0.02661633697436204676, -54499.74599999999919, 0, 0, -1, 0.001456081694764871847, 3, False, 0, 0)
+boolstatus = Part.Extension.SelectByRay(0.08714156931767264025, 0.2625872233906691999, -54499.74599999999919, 0, 0, -1, 0.001456081694764871847, 3, True, 0, 0)
+Set myDisplayDim = Part.AddDimension2(0.04138679612535123287, 0.203059178014675018, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByRay(0.08671330999568299669, 0.2527372589849068429, -54499.74599999999919, 0, 0, -1, 0.001456081694764871847, 3, False, 0, 0)
+boolstatus = Part.Extension.SelectByRay(0.08842634728364162644, 0.03646630138012440375, -54499.74599999999919, 0, 0, -1, 0.001456081694764871847, 3, True, 0, 0)
+Set myDisplayDim = Part.AddDimension2(0.05338679612535124352, 0.2030591780146749903, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByRay(0, 4.27306815815489216, 0, 0, 0, -1, 0.001456081694764871847, 3, False, 0, 0)
+boolstatus = Part.Extension.SelectByRay(-11.34044768585020968, 0.1213960232268886941, 0, 0, 0, -1, 0.001456081694764871847, 3, True, 0, 0)
+Set myDisplayDim = Part.AddDimension2(0.06538679612535125418, 0.2308960339440034593, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByRay(-11.48177326210679894, 0.1213960232268886941, 0, 0, 0, -1, 0.001456081694764871847, 3, False, 0, 0)
+boolstatus = Part.Extension.SelectByRay(0.1496674303281642082, 0.2146221793278263734, -54499.74599999999919, 0, 0, -1, 0.001456081694764871847, 3, True, 0, 0)
+Set myDisplayDim = Part.AddDimension2(0.09228068118154864052, 0.2266134407241067739, 0)
+Part.ClearSelection2 True
+Part.SetPickMode
+Part.ClearSelection2 True
+Part.EditUndo2 1
+boolstatus = Part.Extension.SelectByRay(-11.34044768585020968, 0.1213960232268886941, 0, 0, 0, -1, 0.001456081694764871847, 3, False, 0, 0)
+boolstatus = Part.Extension.SelectByRay(-7.524657126922271289, 1.87053336179282681, 0, 0, 0, -1, 0.001456081694764871847, 3, False, 0, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByRay(-11.38755621126907158, 0.1213960232268886941, 0, 0, 0, -1, 0.001456081694764871847, 3, False, 0, 0)
+boolstatus = Part.Extension.SelectByRay(0.1500956896501538518, 0.2150504386498160447, -54499.74599999999919, 0, 0, -1, 0.001456081694764871847, 3, True, 0, 0)
+Set myDisplayDim = Part.AddDimension2(0.07738679612535126484, 0.230896033944003487, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByRay(0.1500956896501538518, 0.2137656606838470585, -54499.74599999999919, 0, 0, -1, 0.001456081694764871847, 3, False, 0, 0)
+boolstatus = Part.Extension.SelectByRay(0, 4.27306815815489216, 0, 0, 0, -1, 0.001456081694764871847, 3, True, 0, 0)
+boolstatus = Part.DeSelectByID("", "VERTEX", 0, 4.27306815815489216, 0)
+boolstatus = Part.DeSelectByID("", "VERTEX", 0.1500956896501538518, 0.2137656606838470585, -54499.74599999999919)
+boolstatus = Part.Extension.SelectByRay(0.1500956896501538518, 0.2137656606838470585, -54499.74599999999919, 0, 0, -1, 0.001456081694764871847, 3, False, 0, 0)
+boolstatus = Part.DeSelectByID("", "VERTEX", 0.1500956896501538518, 0.2137656606838470585, -54499.74599999999919)
+Part.EditUndo2 1
+boolstatus = Part.Extension.SelectByID2("RD2@Vista de dibujo1", "DIMENSION", 0.05202430491451986994, 0.2227591068261997598, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("RD3@Vista de dibujo1", "DIMENSION", 0.06401556593023055575, 0.234322108519920802, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByRay(0.1059849794852180671, 0.2600176674587312275, -54499.74599999999919, 0, 0, -1, 0.001456081694764871847, 3, False, 0, 0)
+boolstatus = Part.Extension.SelectByRay(0.09741979304542469631, 0.03689456070211404731, -54499.74599999999919, 0, 0, -1, 0.001456081694764871847, 3, False, 0, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByRay(0.105556720163228368, 0.2600176674587312275, -54499.74599999999919, 0, 0, -1, 0.001456081694764871847, 3, False, 0, 0)
+boolstatus = Part.Extension.SelectByRay(0.09827631168940403894, 0.03560978273614506112, -54499.74599999999919, 0, 0, -1, 0.001456081694764871847, 3, True, 0, 0)
+Set myDisplayDim = Part.AddDimension2(0.0473867961253512382, 0.2030591780146747682, 0)
+Part.ClearSelection2 True
+Part.SetPickMode
+Part.ClearSelection2 True
+Part.SetPickMode
+Part.SetPickMode
+boolstatus = Part.Extension.SelectByID2("RD2@Vista de dibujo1", "DIMENSION", 0.05202430491451986994, 0.1983483254727886891, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("RD4@Vista de dibujo1", "DIMENSION", 0.0432322404276915262, 0.2026944238998647507, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("RD2@Vista de dibujo1", "DIMENSION", 0.0578998214532987221, 0.201172316434943238, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("RD3@Vista de dibujo1", "DIMENSION", 0.0979764469148998729, 0.2302903651637472349, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByRay(0.1454914586385459008, 0.2251994706699297355, -54499.74599999999919, 0, 0, -1, 0.001442419998753541582, 1, False, 0, 0)
+
+Set myNote = Part.InsertNote("Malla de nailon")
+If Not myNote Is Nothing Then
+   myNote.LockPosition = False
+   myNote.Angle = 0
+   boolstatus = myNote.SetBalloon(0, 0)
+   Set myAnnotation = myNote.GetAnnotation()
+   If Not myAnnotation Is Nothing Then
+      longstatus = myAnnotation.SetLeader3(swLeaderStyle_e.swUNDERLINED, 0, True, False, False, False)
+      boolstatus = myAnnotation.SetPosition(0.1556732468650415258, 0.2430176004468667106, 0.002309090909089879951)
+      boolstatus = myAnnotation.SetTextFormat(0, True, myTextFormat)
+   End If
+End If
+Part.ClearSelection2 True
+Part.WindowRedraw
+boolstatus = Part.Extension.SelectByRay(0.1213097116006189302, 0.2498054588839607459, -54499.74599999999919, 0, 0, -1, 0.001442419998753541582, 1, False, 0, 0)
+
+Set myNote = Part.InsertNote("Cortinas de nailon")
+If Not myNote Is Nothing Then
+   myNote.LockPosition = False
+   myNote.Angle = 0
+   boolstatus = myNote.SetBalloon(0, 0)
+   Set myAnnotation = myNote.GetAnnotation()
+   If Not myAnnotation Is Nothing Then
+      longstatus = myAnnotation.SetLeader3(swLeaderStyle_e.swUNDERLINED, 0, True, False, False, False)
+      boolstatus = myAnnotation.SetPosition(0.07464318222918081558, 0.2370782239814109571, 0.002309090909089879951)
+      boolstatus = myAnnotation.SetTextFormat(0, True, myTextFormat)
+   End If
+End If
+Part.ClearSelection2 True
+Part.WindowRedraw
+Part.SetPickMode
+Part.SetPickMode
+Part.SetPickMode
+boolstatus = Part.Extension.SelectByID2("RD3@Vista de dibujo1", "DIMENSION", 0.06658259988320514022, 0.2001692416603644553, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Line7", "SKETCHSEGMENT", 0.1501581115756897566, 0.04489697082573706338, -54499.74599999999919, False, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(0.07032625613164639189, 0.09962408292372051943, 0)
+Part.ClearSelection2 True
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Line11", "SKETCHSEGMENT", 0.1196127468962029927, 0.2591387647582483744, -54499.74599999999919, False, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(0.1709459292047848522, 0.2616842121954419675, 0)
+Part.ClearSelection2 True
+Part.SetPickMode
+Part.ClearSelection2 True
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Zoom To Fit
+Part.ViewZoomtofit2
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+
+' Save As
+longstatus = Part.SaveAs3("C:\Users\USER\Desktop\project\Proyectos en Solidwork\nave\navemodificada21_02.pdf", 0, 2)
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
+
+' Close Document
+Set swPart = Nothing
+Set Part = Nothing
+swApp.CloseDoc "nave.SLDPRT"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "malla_de_nailon - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+
+' Close Document
+Set swDrawing = Nothing
+Set Part = Nothing
+swApp.CloseDoc "nave - Hoja1"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "malla_de_nailon.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Close Document
+Set swPart = Nothing
+Set Part = Nothing
+swApp.CloseDoc "malla_de_nailon.SLDPRT"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "malla_de_nailon - Hoja1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+' MSGBOX
+' ¿Guardar cambios en malla_de_nailon - Hoja1?
+
+
+' Close Document
+Set swDrawing = Nothing
+Set Part = Nothing
+swApp.CloseDoc "malla_de_nailon - Hoja1"
+swApp.ExitApp
+End Sub
